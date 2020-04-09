@@ -40,15 +40,9 @@ jobs:
         # Allure report target dir
         report-dir: ./docs # default is allure-report
         
-    - name: git st
-      run: git status
+    - name: mv
+      run: mv allure-report docs
 
-    - name: ls -la1
-      run: ls -la
-    - name: ls -la2
-      run: ls -la docs
-    - name: ls -la3
-      run: ls -la allure-report
       
     - name: Commit files
       run: |
