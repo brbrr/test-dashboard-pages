@@ -34,13 +34,13 @@ jobs:
       run: |
         rm -rf docs
         cp -R allure-report docs
+        rm -rf allure-report
       
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add docs
-        git add allure-report
         git commit -m "Add changes" -a
   
     - name: Push changes
