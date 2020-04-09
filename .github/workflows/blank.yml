@@ -41,7 +41,9 @@ jobs:
         report-dir: ./docs # default is allure-report
         
     - name: mv
-      run: mv allure-report docs
+      run: |
+        ls -la
+        sudo mv allure-report docs
 
       
     - name: Commit files
