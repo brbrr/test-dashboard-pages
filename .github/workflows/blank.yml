@@ -43,7 +43,8 @@ jobs:
     - name: mv
       run: |
         ls -la
-        sudo mv ./allure-report ./docs
+        rm -rf docs
+        ln -s allure-report docs
 
       
     - name: Commit files
@@ -51,6 +52,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add docs
+        git add allure-report
         git commit -m "Add changes" -a
   
     - name: Push changes
