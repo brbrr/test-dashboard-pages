@@ -31,9 +31,7 @@ jobs:
         report-dir: docs # default is allure-report
         
     - name: move allure-report to docs folder for GH Pages
-      run: |
-        rm -rf docs
-        cp -R allure-report docs
+      run: cp -R allure-report docs
       
     - name: Commit files
       run: |
