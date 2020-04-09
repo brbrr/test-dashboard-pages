@@ -36,9 +36,9 @@ jobs:
       uses: afiore/action-allure-report@v0.1.0
       with:
         # Allure test result data dir
-        results-dir: results # default is allure-results
+        results-dir: ./results # default is allure-results
         # Allure report target dir
-        report-dir: docs # default is allure-report
+        report-dir: ./docs # default is allure-report
         
     - name: git st
       run: git status
@@ -48,5 +48,5 @@ jobs:
     - name: ls -la
       run: ls -la docs
     - name: ls -la
-      run: ls -la allure-reports
+      run: ls -la allure-report
 
