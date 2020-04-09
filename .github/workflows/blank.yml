@@ -43,10 +43,29 @@ jobs:
     - name: git st
       run: git status
 
-    - name: ls -la
-      run: ls -la && ls -la docs
-    - name: ls -la
+    - name: ls -la1
+      run: ls -la
+    - name: ls -la2
       run: ls -la docs
-    - name: ls -la
+    - name: ls -la3
       run: ls -la allure-report
+      
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Add changes" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # Repository name to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
+#        repository: # optional, default is 
+        # Destination branch to push changes
+ #       branch: # optional, default is master
+        # Determines if force push is used
+ #       force: # optional
+        # Directory to change to before pushing.
+  #      directory: # optional, default is .
 
