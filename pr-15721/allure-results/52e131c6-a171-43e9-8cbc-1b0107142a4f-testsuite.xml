@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588954205441' stop='1588954207799'>
+    <name>Connection</name>
+    <title>Connection</title>
+    <test-cases>
+        <test-case start='1588954206485' status='failed' stop='1588954207153'>
+            <name>In-place</name>
+            <title>In-place</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1588954206486' status='undefined'>
+                    <name>Can start in-place connection</name>
+                    <title>Can start in-place connection</title>
+                    <attachments>
+                        <attachment title='Test failed: Connection :: In-place' source='f3df013c-5b7c-4112-961a-dd8d7e02dbd0-attachment.png' type='image/png' size='123998'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Protocol error (DOM.describeNode): Cannot find context with specified id</message>
+                <stack-trace>Error: Protocol error (DOM.describeNode): Cannot find context with specified id
+                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)
+                    at new Promise (&lt;anonymous>)
+                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)
+                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)
+                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7
+                    at new Promise (&lt;anonymous>)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
