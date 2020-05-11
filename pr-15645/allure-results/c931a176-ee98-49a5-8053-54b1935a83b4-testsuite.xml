@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1589221582932' stop='1589221633512'>
+    <name>Paid blocks</name>
+    <title>Paid blocks</title>
+    <test-cases>
+        <test-case start='1589221603113' status='passed' stop='1589221619421'>
+            <name>MailChimp Block</name>
+            <title>MailChimp Block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1589221603114' status='passed' stop='1589221609282'>
+                    <name>Can visit the block editor and add a MailChimp block</name>
+                    <title>Can visit the block editor and add a MailChimp block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589221609282' status='passed' stop='1589221616572'>
+                    <name>Can connect to a MailChimp</name>
+                    <title>Can connect to a MailChimp</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589221616572' status='passed' stop='1589221619416'>
+                    <name>Can publish a post and assert that MailChimp block is rendered</name>
+                    <title>Can publish a post and assert that MailChimp block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1589221619421' status='passed' stop='1589221629039'>
+            <name>Simple Payment block</name>
+            <title>Simple Payment block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1589221619422' status='passed' stop='1589221622707'>
+                    <name>Can visit the block editor and add a Simple Payment block</name>
+                    <title>Can visit the block editor and add a Simple Payment block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589221622707' status='passed' stop='1589221626604'>
+                    <name>Can fill details of Simple Payment block</name>
+                    <title>Can fill details of Simple Payment block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589221626605' status='passed' stop='1589221628963'>
+                    <name>Can publish a post and assert that Simple Payment block is rendered</name>
+                    <title>Can publish a post and assert that Simple Payment block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1589221629039' status='failed' stop='1589221632080'>
+            <name>WordAds block</name>
+            <title>WordAds block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1589221629040' status='passed' stop='1589221631695'>
+                    <name>Can visit the block editor and add a WordAds block</name>
+                    <title>Can visit the block editor and add a WordAds block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589221631695' status='undefined'>
+                    <name>Can switch to Wide Skyscraper ad format</name>
+                    <title>Can switch to Wide Skyscraper ad format</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: WordAds block' source='12794eed-9c81-446e-8381-87870f8004f5-attachment.png' type='image/png' size='57364'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Node is either not visible or not an HTMLElement</message>
+                <stack-trace>Error: Node is either not visible or not an HTMLElement
+                    at ElementHandle._clickablePoint (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/JSHandle.js:221:13)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                  -- ASYNC --
+                    at ElementHandle.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at DOMWorld.click (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:367:18)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at Page.click (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1064:29)
+                    at click (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:60:20)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
