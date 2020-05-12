@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1589280704082' stop='1589280876230'>
+    <name>Connection</name>
+    <title>Connection</title>
+    <test-cases>
+        <test-case start='1589280704082' status='passed' stop='1589280759743'>
+            <name>In-place with Free plan</name>
+            <title>In-place with Free plan</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1589280716777' status='passed' stop='1589280758904'>
+                    <name>Can start in-place connection</name>
+                    <title>Can start in-place connection</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589280758904' status='passed' stop='1589280759631'>
+                    <name>Can assert that site is connected</name>
+                    <title>Can assert that site is connected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1589280759743' status='failed' stop='1589280870467'>
+            <name>In-place upgrading a plan from personal to premium</name>
+            <title>In-place upgrading a plan from personal to premium</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1589280772219' status='passed' stop='1589280773476'>
+                    <name>Can set a sandbox cookie</name>
+                    <title>Can set a sandbox cookie</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589280773476' status='passed' stop='1589280796295'>
+                    <name>Can start in-place connection</name>
+                    <title>Can start in-place connection</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589280796295' status='passed' stop='1589280826684'>
+                    <name>Can process payment</name>
+                    <title>Can process payment</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589280826684' status='passed' stop='1589280826692'>
+                    <name>Can assert that site has a Personal plan</name>
+                    <title>Can assert that site has a Personal plan</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589280826692' status='passed' stop='1589280828076'>
+                    <name>Can visit plans page and select a Premium plan</name>
+                    <title>Can visit plans page and select a Premium plan</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1589280828076' status='undefined'>
+                    <name>Can process payment</name>
+                    <title>Can process payment</title>
+                    <attachments>
+                        <attachment title='Test failed: Connection :: In-place upgrading a plan from personal to premium' source='1cf5b174-32e2-40e3-b2ab-27c2fd0cb2be-attachment.png' type='image/png' size='151990'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Site does not have premium plan</message>
+                <stack-trace>Error: Site does not have premium plan
+                    at _callee4$ (/home/travis/build/Automattic/jetpack/tests/e2e/lib/flows/jetpack-connect.js:111:9)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
