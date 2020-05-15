@@ -1,28 +1,28 @@
 {
-  "uid" : "a1c1f03bce5c0b4c",
-  "name" : "In-place",
-  "fullName" : "Connection.In-place",
-  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "uid" : "2c923d9560042dff",
+  "name" : "Simple Payment block",
+  "fullName" : "Paid blocks.Simple Payment block",
+  "historyId" : "c25489f86a2b4a7e14c74966e7adb039",
   "time" : {
-    "start" : 1589556338883,
-    "stop" : 1589556359568,
-    "duration" : 20685
+    "start" : 1589556266512,
+    "stop" : 1589556276132,
+    "duration" : 9620
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can start in-place connection",
+      "name" : "Can visit the block editor and add a Simple Payment block",
       "time" : {
-        "start" : 1589556338884,
-        "stop" : 1589556358466,
-        "duration" : 19582
+        "start" : 1589556266512,
+        "stop" : 1589556269671,
+        "duration" : 3159
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can assert that site is connected",
+      "name" : "Can fill details of Simple Payment block",
       "time" : {
-        "start" : 1589556358466,
-        "stop" : 1589556359344,
-        "duration" : 878
+        "start" : 1589556269671,
+        "stop" : 1589556273596,
+        "duration" : 3925
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can publish a post and assert that Simple Payment block is rendered",
+      "time" : {
+        "start" : 1589556273596,
+        "stop" : 1589556276100,
+        "duration" : 2504
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -58,41 +73,29 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testClass",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "In-place"
+    "value" : "Simple Payment block"
   }, {
     "name" : "package",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "7f2c80ca0af896e1",
-      "status" : "failed",
-      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
-      "time" : {
-        "start" : 1589556051693,
-        "stop" : 1589556083148,
-        "duration" : 31455
-      }
-    } ],
-    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a1c1f03bce5c0b4c.json",
+  "source" : "2c923d9560042dff.json",
   "statusDetailsSafe" : {
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "present" : false
