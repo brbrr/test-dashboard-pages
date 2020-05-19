@@ -1,28 +1,28 @@
 {
-  "uid" : "c63d939c1726e282",
-  "name" : "Eventbrite block",
-  "fullName" : "Free blocks.Eventbrite block",
-  "historyId" : "87adddd8242e0efdefa8ae2567cea22b",
+  "uid" : "c8b7ebe08da1c41a",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1589598957875,
-    "stop" : 1589598965636,
-    "duration" : 7761
+    "start" : 1589911006371,
+    "stop" : 1589911024828,
+    "duration" : 18457
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Eventbrite block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1589598957875,
-        "stop" : 1589598963136,
-        "duration" : 5261
+        "start" : 1589911006374,
+        "stop" : 1589911023914,
+        "duration" : 17540
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post with a Eventbrite block",
+      "name" : "Can assert that site is connected",
       "time" : {
-        "start" : 1589598963137,
-        "stop" : 1589598965323,
-        "duration" : 2186
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can assert that Eventbrite block is rendered",
-      "time" : {
-        "start" : 1589598965323,
-        "stop" : 1589598965632,
-        "duration" : 309
+        "start" : 1589911023914,
+        "stop" : 1589911024815,
+        "duration" : 901
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Eventbrite block"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -92,13 +77,22 @@
   "hidden" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "d839b91d54d938f1",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589598984396,
+        "stop" : 1589599015349,
+        "duration" : 30953
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c63d939c1726e282.json",
+  "source" : "c8b7ebe08da1c41a.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "present" : false
