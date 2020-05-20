@@ -1,0 +1,771 @@
+{
+  "uid" : "a33cf42751325ccd",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "time" : {
+    "start" : 1589995412696,
+    "stop" : 1589995444087,
+    "duration" : 31391
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusDetails" : {
+    "message" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+    "trace" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+    "flaky" : true
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusDetails" : {
+      "message" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "trace" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+      "flaky" : true
+    },
+    "steps" : [ {
+      "name" : "Can start in-place connection",
+      "time" : {
+        "start" : 1589995412698,
+        "stop" : 0,
+        "duration" : -1589995412698
+      },
+      "status" : "unknown",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "143b71bcbee42b3a",
+        "name" : "Test failed: Connection :: In-place",
+        "source" : "143b71bcbee42b3a.png",
+        "type" : "image/png",
+        "size" : 50423
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Connection"
+  }, {
+    "name" : "testClass",
+    "value" : "Connection"
+  }, {
+    "name" : "testMethod",
+    "value" : "In-place"
+  }, {
+    "name" : "package",
+    "value" : "Connection"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f8b577a9b01d6dfe",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1589978963022,
+        "stop" : 1589978963774,
+        "duration" : 752
+      }
+    }, {
+      "uid" : "70e490dc3b3d0814",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589962473288,
+        "stop" : 1589962500925,
+        "duration" : 27637
+      }
+    }, {
+      "uid" : "941cf954c52a679c",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1589929965207,
+        "stop" : 1589929965948,
+        "duration" : 741
+      }
+    }, {
+      "uid" : "399006507f97490",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589928278043,
+        "stop" : 1589928296538,
+        "duration" : 18495
+      }
+    }, {
+      "uid" : "4cea814f83411358",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589913715450,
+        "stop" : 1589913734540,
+        "duration" : 19090
+      }
+    }, {
+      "uid" : "5ee2aed93cec5c7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589913179244,
+        "stop" : 1589913198576,
+        "duration" : 19332
+      }
+    }, {
+      "uid" : "65647d59d01f75d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589907055808,
+        "stop" : 1589907076758,
+        "duration" : 20950
+      }
+    }, {
+      "uid" : "fa3d5080ef640c2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589900454686,
+        "stop" : 1589900474563,
+        "duration" : 19877
+      }
+    }, {
+      "uid" : "c9b803ae2eef085d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589899143578,
+        "stop" : 1589899167375,
+        "duration" : 23797
+      }
+    }, {
+      "uid" : "89e846b3cfc82137",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589891175710,
+        "stop" : 1589891195776,
+        "duration" : 20066
+      }
+    }, {
+      "uid" : "8b85a4c8a2dbfa8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589888372717,
+        "stop" : 1589888395751,
+        "duration" : 23034
+      }
+    }, {
+      "uid" : "d3160affe3bf6166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589886542806,
+        "stop" : 1589886559882,
+        "duration" : 17076
+      }
+    }, {
+      "uid" : "8f8cfd874e3e4bcd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589841679931,
+        "stop" : 1589841701375,
+        "duration" : 21444
+      }
+    }, {
+      "uid" : "4f20f50e97feff6f",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589835692503,
+        "stop" : 1589835724093,
+        "duration" : 31590
+      }
+    }, {
+      "uid" : "db14e77f287bfe0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589823926267,
+        "stop" : 1589823950788,
+        "duration" : 24521
+      }
+    }, {
+      "uid" : "b7bdbd12118fd2d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589820570917,
+        "stop" : 1589820591056,
+        "duration" : 20139
+      }
+    }, {
+      "uid" : "ad8b55b593dba8d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589813536289,
+        "stop" : 1589813554326,
+        "duration" : 18037
+      }
+    }, {
+      "uid" : "4f9f96a626141075",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589809239139,
+        "stop" : 1589809257804,
+        "duration" : 18665
+      }
+    }, {
+      "uid" : "147949f39c4874f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589808180654,
+        "stop" : 1589808201694,
+        "duration" : 21040
+      }
+    }, {
+      "uid" : "e899dd4a0a18cd61",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589803596338,
+        "stop" : 1589803628185,
+        "duration" : 31847
+      }
+    }, {
+      "uid" : "fad5cc99bda8aa22",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589802028070,
+        "stop" : 1589802048673,
+        "duration" : 20603
+      }
+    }, {
+      "uid" : "338a7f298032a8cd",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1589800104786,
+        "stop" : 1589800105563,
+        "duration" : 777
+      }
+    }, {
+      "uid" : "5ceeda539093f08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589737612077,
+        "stop" : 1589737629888,
+        "duration" : 17811
+      }
+    }, {
+      "uid" : "d10ec8538599153d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589720699234,
+        "stop" : 1589720715188,
+        "duration" : 15954
+      }
+    }, {
+      "uid" : "adbeccaa65e39e01",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589651079879,
+        "stop" : 1589651099438,
+        "duration" : 19559
+      }
+    }, {
+      "uid" : "a3022eaa2d1c591",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589580028881,
+        "stop" : 1589580053240,
+        "duration" : 24359
+      }
+    }, {
+      "uid" : "209ab5933b2ad75a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589570530869,
+        "stop" : 1589570553986,
+        "duration" : 23117
+      }
+    }, {
+      "uid" : "4fc02f4f0a083220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589569438103,
+        "stop" : 1589569460077,
+        "duration" : 21974
+      }
+    }, {
+      "uid" : "aa9bfdb7606dca59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589560341146,
+        "stop" : 1589560362756,
+        "duration" : 21610
+      }
+    }, {
+      "uid" : "dcadfda1330c409d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589552555154,
+        "stop" : 1589552575768,
+        "duration" : 20614
+      }
+    }, {
+      "uid" : "f0751e0d2045cf21",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589551583642,
+        "stop" : 1589551602295,
+        "duration" : 18653
+      }
+    }, {
+      "uid" : "eafda5572d221543",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589527401971,
+        "stop" : 1589527419640,
+        "duration" : 17669
+      }
+    }, {
+      "uid" : "5479f94890412cf5",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589495099203,
+        "stop" : 1589495131994,
+        "duration" : 32791
+      }
+    }, {
+      "uid" : "3c6f9d344a9d807e",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (Page.captureScreenshot): Cannot take screenshot with 0 width.",
+      "time" : {
+        "start" : 1589492520864,
+        "stop" : 1589492521315,
+        "duration" : 451
+      }
+    }, {
+      "uid" : "972d6f82db6e2cf0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589484696583,
+        "stop" : 1589484715329,
+        "duration" : 18746
+      }
+    }, {
+      "uid" : "ece297ca34081220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589478216619,
+        "stop" : 1589478234539,
+        "duration" : 17920
+      }
+    }, {
+      "uid" : "5016ccfe0f0cdf70",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589477900816,
+        "stop" : 1589477920103,
+        "duration" : 19287
+      }
+    }, {
+      "uid" : "be95c269ac224749",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589476758524,
+        "stop" : 1589476779233,
+        "duration" : 20709
+      }
+    }, {
+      "uid" : "cf1cc02f8f5ff44d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589474570963,
+        "stop" : 1589474588442,
+        "duration" : 17479
+      }
+    }, {
+      "uid" : "4a2c31aca9fcf331",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589472220026,
+        "stop" : 1589472237894,
+        "duration" : 17868
+      }
+    }, {
+      "uid" : "86dd099e722006b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589457221200,
+        "stop" : 1589457239966,
+        "duration" : 18766
+      }
+    }, {
+      "uid" : "3c7c5c32c126a6d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589399440009,
+        "stop" : 1589399461400,
+        "duration" : 21391
+      }
+    }, {
+      "uid" : "8e9afbc8e2652004",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1589394697298,
+        "stop" : 1589394697962,
+        "duration" : 664
+      }
+    }, {
+      "uid" : "ba486bceace544d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589394373229,
+        "stop" : 1589394392558,
+        "duration" : 19329
+      }
+    }, {
+      "uid" : "e08ef11f530127c2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589391845194,
+        "stop" : 1589391866351,
+        "duration" : 21157
+      }
+    }, {
+      "uid" : "dd821be9672e3e24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589389654156,
+        "stop" : 1589389675135,
+        "duration" : 20979
+      }
+    }, {
+      "uid" : "248015fd3ab4b02b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589371283176,
+        "stop" : 1589371300996,
+        "duration" : 17820
+      }
+    }, {
+      "uid" : "c6fdd34b6be93d81",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589352554832,
+        "stop" : 1589352571480,
+        "duration" : 16648
+      }
+    }, {
+      "uid" : "5e8e32660a1695a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589349612849,
+        "stop" : 1589349632410,
+        "duration" : 19561
+      }
+    }, {
+      "uid" : "61e7253c84f2b521",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589311749411,
+        "stop" : 1589311770043,
+        "duration" : 20632
+      }
+    }, {
+      "uid" : "10295d489b6f9c07",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589306066405,
+        "stop" : 1589306086044,
+        "duration" : 19639
+      }
+    }, {
+      "uid" : "8ce419626b716c92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589302729791,
+        "stop" : 1589302749516,
+        "duration" : 19725
+      }
+    }, {
+      "uid" : "6d2270b30245e6b9",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589300903778,
+        "stop" : 1589300934559,
+        "duration" : 30781
+      }
+    }, {
+      "uid" : "cea73c738cca0297",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589299415377,
+        "stop" : 1589299434483,
+        "duration" : 19106
+      }
+    }, {
+      "uid" : "6939cb0ee9e72951",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589297331417,
+        "stop" : 1589297362671,
+        "duration" : 31254
+      }
+    }, {
+      "uid" : "cbeef09033916aa1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589293942784,
+        "stop" : 1589293961372,
+        "duration" : 18588
+      }
+    }, {
+      "uid" : "9d4187610f5bc76d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589288599020,
+        "stop" : 1589288616394,
+        "duration" : 17374
+      }
+    }, {
+      "uid" : "57f63c6c4bfb5402",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589283216516,
+        "stop" : 1589283232946,
+        "duration" : 16430
+      }
+    }, {
+      "uid" : "4419481b378b3338",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589230258570,
+        "stop" : 1589230278646,
+        "duration" : 20076
+      }
+    }, {
+      "uid" : "e1886f67a89f4b06",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1589228050736,
+        "stop" : 1589228051347,
+        "duration" : 611
+      }
+    }, {
+      "uid" : "3736e20d0d8a7eac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589224165163,
+        "stop" : 1589224185884,
+        "duration" : 20721
+      }
+    }, {
+      "uid" : "193b7361a87a9d6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589219026958,
+        "stop" : 1589219044164,
+        "duration" : 17206
+      }
+    }, {
+      "uid" : "73ed6522e8df8069",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589218738204,
+        "stop" : 1589218756563,
+        "duration" : 18359
+      }
+    }, {
+      "uid" : "5938cf4f28e75ed4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589198400307,
+        "stop" : 1589198419846,
+        "duration" : 19539
+      }
+    }, {
+      "uid" : "354335314ec70319",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589197968262,
+        "stop" : 1589197988623,
+        "duration" : 20361
+      }
+    }, {
+      "uid" : "e2381839013e8f4",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589132336610,
+        "stop" : 1589132368117,
+        "duration" : 31507
+      }
+    }, {
+      "uid" : "59612efeca914e9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589046024927,
+        "stop" : 1589046042355,
+        "duration" : 17428
+      }
+    }, {
+      "uid" : "b7733d151a22e238",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588959512887,
+        "stop" : 1588959532915,
+        "duration" : 20028
+      }
+    }, {
+      "uid" : "f0e9efdaf6a0c531",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588951996331,
+        "stop" : 1588952015716,
+        "duration" : 19385
+      }
+    }, {
+      "uid" : "f5db7e9b8b13e6e7",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1588948733390,
+        "stop" : 1588948765744,
+        "duration" : 32354
+      }
+    }, {
+      "uid" : "9dd054557d875542",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588933898188,
+        "stop" : 1588933918404,
+        "duration" : 20216
+      }
+    }, {
+      "uid" : "2ee12025edb89f12",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1588933218448,
+        "stop" : 1588933249609,
+        "duration" : 31161
+      }
+    }, {
+      "uid" : "4e33ba4df1538060",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588876109154,
+        "stop" : 1588876127358,
+        "duration" : 18204
+      }
+    }, {
+      "uid" : "571c15b9f6ce3997",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588873076003,
+        "stop" : 1588873096264,
+        "duration" : 20261
+      }
+    }, {
+      "uid" : "7ce8d672956c7da9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588871142302,
+        "stop" : 1588871161027,
+        "duration" : 18725
+      }
+    }, {
+      "uid" : "67e74cc7be9bda4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588864519368,
+        "stop" : 1588864538162,
+        "duration" : 18794
+      }
+    }, {
+      "uid" : "71b2d7fc47cf617a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588863277918,
+        "stop" : 1588863297608,
+        "duration" : 19690
+      }
+    }, {
+      "uid" : "3bd01b42c59dbb62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588862926134,
+        "stop" : 1588862943972,
+        "duration" : 17838
+      }
+    }, {
+      "uid" : "2662373d4dc2b3c0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588860000022,
+        "stop" : 1588860017151,
+        "duration" : 17129
+      }
+    }, {
+      "uid" : "cbcce0d94dda7f48",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1588853185498,
+        "stop" : 1588853186259,
+        "duration" : 761
+      }
+    }, {
+      "uid" : "5de288054f833c04",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588848429512,
+        "stop" : 1588848447368,
+        "duration" : 17856
+      }
+    }, {
+      "uid" : "4cb4648e81ca0f63",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1588843590541,
+        "stop" : 1588843621657,
+        "duration" : 31116
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a33cf42751325ccd.json",
+  "statusDetailsSafe" : {
+    "message" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+    "trace" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+    "flaky" : true
+  },
+  "statusMessage" : {
+    "present" : true
+  },
+  "parameterValues" : [ ]
+}
