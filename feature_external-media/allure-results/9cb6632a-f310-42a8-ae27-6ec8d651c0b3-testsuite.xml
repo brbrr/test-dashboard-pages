@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590092558683' stop='1590092612299'>
+    <name>Free blocks</name>
+    <title>Free blocks</title>
+    <test-cases>
+        <test-case start='1590092569685' status='failed' stop='1590092603928'>
+            <name>Pinterest block</name>
+            <title>Pinterest block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1590092569685' status='undefined'>
+                    <name>Can visit the block editor and add a Pinterest block</name>
+                    <title>Can visit the block editor and add a Pinterest block</title>
+                    <attachments>
+                        <attachment title='Test failed: Free blocks :: Pinterest block' source='191719d0-efdd-49cf-a09b-c89b55207d0c-attachment.png' type='image/png' size='43414'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector ".wp-block-jetpack-pinterest .components-sandbox" failed: timeout 30000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector ".wp-block-jetpack-pinterest .components-sandbox" failed: timeout 30000ms exceeded
+                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)
+                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)
+                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)
+                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7
+                    at new Promise (&lt;anonymous>)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1590092603928' status='passed' stop='1590092612299'>
+            <name>Eventbrite block</name>
+            <title>Eventbrite block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1590092603929' status='passed' stop='1590092609441'>
+                    <name>Can visit the block editor and add a Eventbrite block</name>
+                    <title>Can visit the block editor and add a Eventbrite block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1590092609441' status='passed' stop='1590092611937'>
+                    <name>Can publish a post with a Eventbrite block</name>
+                    <title>Can publish a post with a Eventbrite block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1590092611937' status='passed' stop='1590092612276'>
+                    <name>Can assert that Eventbrite block is rendered</name>
+                    <title>Can assert that Eventbrite block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
