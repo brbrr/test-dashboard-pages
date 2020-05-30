@@ -1,28 +1,28 @@
 {
-  "uid" : "28008200684d3a79",
-  "name" : "MailChimp Block",
-  "fullName" : "Paid blocks.MailChimp Block",
-  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
+  "uid" : "368e06c22c4d3850",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1588378202760,
-    "stop" : 1588378219184,
-    "duration" : 16424
+    "start" : 1590873446868,
+    "stop" : 1590873468090,
+    "duration" : 21222
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a MailChimp block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1588378202761,
-        "stop" : 1588378209153,
-        "duration" : 6392
+        "start" : 1590873446869,
+        "stop" : 1590873466870,
+        "duration" : 20001
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can connect to a MailChimp",
+      "name" : "Can assert that site is connected",
       "time" : {
-        "start" : 1588378209153,
-        "stop" : 1588378215918,
-        "duration" : 6765
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can publish a post and assert that MailChimp block is rendered",
-      "time" : {
-        "start" : 1588378215918,
-        "stop" : 1588378219088,
-        "duration" : 3170
+        "start" : 1590873466870,
+        "stop" : 1590873468040,
+        "duration" : 1170
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,29 +58,41 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "MailChimp Block"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
+  "hidden" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8bd911665b1fa864",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1590798059291,
+        "stop" : 1590798091113,
+        "duration" : 31822
+      }
+    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "28008200684d3a79.json",
+  "source" : "368e06c22c4d3850.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "present" : false
