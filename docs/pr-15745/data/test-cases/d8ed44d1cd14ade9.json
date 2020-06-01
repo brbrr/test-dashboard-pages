@@ -1,0 +1,662 @@
+{
+  "uid" : "d8ed44d1cd14ade9",
+  "name" : "In-place upgrading a plan from personal to premium",
+  "fullName" : "Connection.In-place upgrading a plan from personal to premium",
+  "historyId" : "58de9981baba1e55bed32e654a6ddf4e",
+  "time" : {
+    "start" : 1591043083703,
+    "stop" : 1591043146369,
+    "duration" : 62666
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusDetails" : {
+    "message" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+    "trace" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id\n                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)\n                    at new Promise (<anonymous>)\n                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)\n                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+    "flaky" : true
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusDetails" : {
+      "message" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "trace" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id\n                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)\n                    at new Promise (<anonymous>)\n                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)\n                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+      "flaky" : true
+    },
+    "steps" : [ {
+      "name" : "Can set a sandbox cookie",
+      "time" : {
+        "start" : 1591043096506,
+        "stop" : 1591043097832,
+        "duration" : 1326
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can start in-place connection",
+      "time" : {
+        "start" : 1591043097832,
+        "stop" : 1591043131557,
+        "duration" : 33725
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can process payment for Personal plan",
+      "time" : {
+        "start" : 1591043131557,
+        "stop" : 0,
+        "duration" : -1591043131557
+      },
+      "status" : "unknown",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c25438512702cf7d",
+        "name" : "Test failed: Connection :: In-place upgrading a plan from personal to premium",
+        "source" : "c25438512702cf7d.png",
+        "type" : "image/png",
+        "size" : 7758
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Connection"
+  }, {
+    "name" : "testClass",
+    "value" : "Connection"
+  }, {
+    "name" : "testMethod",
+    "value" : "In-place upgrading a plan from personal to premium"
+  }, {
+    "name" : "package",
+    "value" : "Connection"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f5f5317639d5adbe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591042240476,
+        "stop" : 1591042347558,
+        "duration" : 107082
+      }
+    }, {
+      "uid" : "a0e0d257bccf5711",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591037966501,
+        "stop" : 1591038077428,
+        "duration" : 110927
+      }
+    }, {
+      "uid" : "bea2cc4c94c2882e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591020204162,
+        "stop" : 1591020313057,
+        "duration" : 108895
+      }
+    }, {
+      "uid" : "1896aeb4b9d17a8f",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+      "time" : {
+        "start" : 1591019244249,
+        "stop" : 1591019307800,
+        "duration" : 63551
+      }
+    }, {
+      "uid" : "2086ab4ce70ea075",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1590687037147,
+        "stop" : 1590687178432,
+        "duration" : 141285
+      }
+    }, {
+      "uid" : "61d6e74bde29b9f1",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589796749638,
+        "stop" : 1589796870907,
+        "duration" : 121269
+      }
+    }, {
+      "uid" : "5d66af604b8f2d25",
+      "status" : "failed",
+      "statusDetails" : "TypeError: Cannot read property 'currentStep' of undefined",
+      "time" : {
+        "start" : 1589795671540,
+        "stop" : 1589795705750,
+        "duration" : 34210
+      }
+    }, {
+      "uid" : "152ca8d62ee3b227",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589619497037,
+        "stop" : 1589619595383,
+        "duration" : 98346
+      }
+    }, {
+      "uid" : "5a8e75160715e912",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589618689511,
+        "stop" : 1589618776850,
+        "duration" : 87339
+      }
+    }, {
+      "uid" : "3857ae9d4c576f8e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589618293446,
+        "stop" : 1589618398117,
+        "duration" : 104671
+      }
+    }, {
+      "uid" : "544ba249fac6a961",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589616802946,
+        "stop" : 1589616904226,
+        "duration" : 101280
+      }
+    }, {
+      "uid" : "45a33a1673eb3c55",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589562673531,
+        "stop" : 1589562803293,
+        "duration" : 129762
+      }
+    }, {
+      "uid" : "afe51313962449ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589561557355,
+        "stop" : 1589561664129,
+        "duration" : 106774
+      }
+    }, {
+      "uid" : "c6b7f23336a8c29a",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589559760211,
+        "stop" : 1589559880044,
+        "duration" : 119833
+      }
+    }, {
+      "uid" : "2fba4206a962718b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589556655014,
+        "stop" : 1589556760826,
+        "duration" : 105812
+      }
+    }, {
+      "uid" : "533a3ae81e458e0b",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".login\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589548835246,
+        "stop" : 1589548895090,
+        "duration" : 59844
+      }
+    }, {
+      "uid" : "317e552b8cb3dad2",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".login\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589547209373,
+        "stop" : 1589547269347,
+        "duration" : 59974
+      }
+    }, {
+      "uid" : "ca64e490346d7f3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589531489197,
+        "stop" : 1589531649251,
+        "duration" : 160054
+      }
+    }, {
+      "uid" : "d4d13ccf6952a1b6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589530857553,
+        "stop" : 1589530948232,
+        "duration" : 90679
+      }
+    }, {
+      "uid" : "6ee1178d3dfb1f00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589530025120,
+        "stop" : 1589530121212,
+        "duration" : 96092
+      }
+    }, {
+      "uid" : "975bc7b16beada05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589528918539,
+        "stop" : 1589529042951,
+        "duration" : 124412
+      }
+    }, {
+      "uid" : "16d9af6e67f3b91a",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589526224175,
+        "stop" : 1589526391482,
+        "duration" : 167307
+      }
+    }, {
+      "uid" : "50ea3dfc00af748c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589485526506,
+        "stop" : 1589485658950,
+        "duration" : 132444
+      }
+    }, {
+      "uid" : "93a066b40c54e0e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589480704973,
+        "stop" : 1589480854366,
+        "duration" : 149393
+      }
+    }, {
+      "uid" : "77b81c5207fb7dc2",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589479975774,
+        "stop" : 1589480129506,
+        "duration" : 153732
+      }
+    }, {
+      "uid" : "743bb80a4acd79ca",
+      "status" : "failed",
+      "statusDetails" : "Error: Command failed: rm /home/travis/wordpress/wp-content/plugins/e2e-plan-data-interceptor.php\n                rm: cannot remove ‘/home/travis/wordpress/wp-content/plugins/e2e-plan-data-interceptor.php’: No such file or directory\n                ",
+      "time" : {
+        "start" : 1589476299097,
+        "stop" : 1589476331805,
+        "duration" : 32708
+      }
+    }, {
+      "uid" : "243850f64aad4f12",
+      "status" : "failed",
+      "statusDetails" : "TypeError: Cannot read property 'currentStep' of undefined",
+      "time" : {
+        "start" : 1589473494291,
+        "stop" : 1589473526694,
+        "duration" : 32403
+      }
+    }, {
+      "uid" : "3a23b176c32456b6",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have pro plan",
+      "time" : {
+        "start" : 1589471711500,
+        "stop" : 1589471851535,
+        "duration" : 140035
+      }
+    }, {
+      "uid" : "3159330349cdccf6",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have pro plan",
+      "time" : {
+        "start" : 1589470648368,
+        "stop" : 1589470790856,
+        "duration" : 142488
+      }
+    }, {
+      "uid" : "a151a5f74f8b6163",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589456727578,
+        "stop" : 1589456857337,
+        "duration" : 129759
+      }
+    }, {
+      "uid" : "6aab2e17f19652df",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589445288713,
+        "stop" : 1589445426017,
+        "duration" : 137304
+      }
+    }, {
+      "uid" : "4f51359a48ebd721",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589389984450,
+        "stop" : 1589390107216,
+        "duration" : 122766
+      }
+    }, {
+      "uid" : "b7bb6f754c01e76f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589386971317,
+        "stop" : 1589387071093,
+        "duration" : 99776
+      }
+    }, {
+      "uid" : "457495d839a0ced7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589385619721,
+        "stop" : 1589385732139,
+        "duration" : 112418
+      }
+    }, {
+      "uid" : "d0c26586d614d97d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589384197813,
+        "stop" : 1589384321104,
+        "duration" : 123291
+      }
+    }, {
+      "uid" : "5bae2596ed9a4df8",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589384105284,
+        "stop" : 1589384224171,
+        "duration" : 118887
+      }
+    }, {
+      "uid" : "ccbfadaf413534d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589372688187,
+        "stop" : 1589372816075,
+        "duration" : 127888
+      }
+    }, {
+      "uid" : "49b33e854bb61e98",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1589371711848,
+        "stop" : 1589371820012,
+        "duration" : 108164
+      }
+    }, {
+      "uid" : "1d52a59c2fab8ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589371688930,
+        "stop" : 1589371824783,
+        "duration" : 135853
+      }
+    }, {
+      "uid" : "a941b8306447ae5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589371329946,
+        "stop" : 1589371465860,
+        "duration" : 135914
+      }
+    }, {
+      "uid" : "dde35c466f299107",
+      "status" : "failed",
+      "statusDetails" : ": Timeout - Async callback was not invoked within the 300000ms timeout specified by jest.setTimeout.",
+      "time" : {
+        "start" : 1589365528774,
+        "stop" : 1589365844081,
+        "duration" : 315307
+      }
+    }, {
+      "uid" : "b3fe9c16df8e0fb",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589364014249,
+        "stop" : 1589364289487,
+        "duration" : 275238
+      }
+    }, {
+      "uid" : "9caebbea9bc297b2",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589355387105,
+        "stop" : 1589355536962,
+        "duration" : 149857
+      }
+    }, {
+      "uid" : "753984c753587650",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".plans-prompt__footer a\" failed: timeout 60000ms exceeded",
+      "time" : {
+        "start" : 1589353842827,
+        "stop" : 1589353995829,
+        "duration" : 153002
+      }
+    }, {
+      "uid" : "e4cf6d2269ec7eb6",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589352261861,
+        "stop" : 1589352402753,
+        "duration" : 140892
+      }
+    }, {
+      "uid" : "47401e58cc3ffea6",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".plans-prompt__footer a\" failed: timeout 60000ms exceeded",
+      "time" : {
+        "start" : 1589350973261,
+        "stop" : 1589351128184,
+        "duration" : 154923
+      }
+    }, {
+      "uid" : "9150b3d26a1be5bd",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589317612241,
+        "stop" : 1589317773813,
+        "duration" : 161572
+      }
+    }, {
+      "uid" : "e499421516478f25",
+      "status" : "failed",
+      "statusDetails" : "Error: waitForFunction failed: frame got detached.",
+      "time" : {
+        "start" : 1589314734245,
+        "stop" : 1589314784007,
+        "duration" : 49762
+      }
+    }, {
+      "uid" : "c5f82ef3c47716b3",
+      "status" : "failed",
+      "statusDetails" : "Error: waitForFunction failed: frame got detached.",
+      "time" : {
+        "start" : 1589312504493,
+        "stop" : 1589312542740,
+        "duration" : 38247
+      }
+    }, {
+      "uid" : "1aadc021c63ba41e",
+      "status" : "failed",
+      "statusDetails" : "Error: waitForFunction failed: frame got detached.",
+      "time" : {
+        "start" : 1589309208035,
+        "stop" : 1589309246685,
+        "duration" : 38650
+      }
+    }, {
+      "uid" : "2af385e5611e295c",
+      "status" : "failed",
+      "statusDetails" : "Error: waitForFunction failed: frame got detached.",
+      "time" : {
+        "start" : 1589308356869,
+        "stop" : 1589308400457,
+        "duration" : 43588
+      }
+    }, {
+      "uid" : "b06cb4b2c8239953",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".plans-prompt__footer a\" failed: timeout 60000ms exceeded",
+      "time" : {
+        "start" : 1589297067131,
+        "stop" : 1589297161887,
+        "duration" : 94756
+      }
+    }, {
+      "uid" : "e415c4c23e4e2884",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589289143258,
+        "stop" : 1589289265427,
+        "duration" : 122169
+      }
+    }, {
+      "uid" : "f107a959d03cfe25",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".checkout__credit-card-payment-box-progress-bar\" failed: timeout 30000ms exceeded",
+      "time" : {
+        "start" : 1589285925109,
+        "stop" : 1589286053779,
+        "duration" : 128670
+      }
+    }, {
+      "uid" : "e035a287c3d714c3",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589283959892,
+        "stop" : 1589284099541,
+        "duration" : 139649
+      }
+    }, {
+      "uid" : "5028cb346ea74be0",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"#toplevel_page_jetpack\" failed: timeout 30000ms exceeded",
+      "time" : {
+        "start" : 1589282519526,
+        "stop" : 1589282562205,
+        "duration" : 42679
+      }
+    }, {
+      "uid" : "2d6087aeffe6dd28",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589280759743,
+        "stop" : 1589280870467,
+        "duration" : 110724
+      }
+    }, {
+      "uid" : "689a22e99b8618c0",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589217130731,
+        "stop" : 1589217267977,
+        "duration" : 137246
+      }
+    }, {
+      "uid" : "7d8f8d5844e4a8d9",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".checkout__secure-payment-form\" to be hidden failed: timeout 150000ms exceeded",
+      "time" : {
+        "start" : 1589214859823,
+        "stop" : 1589215082560,
+        "duration" : 222737
+      }
+    }, {
+      "uid" : "8468ddc0c4b1df94",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".plans-prompt__footer a\" failed: timeout 60000ms exceeded",
+      "time" : {
+        "start" : 1589212071523,
+        "stop" : 1589212163750,
+        "duration" : 92227
+      }
+    }, {
+      "uid" : "963d0a12f865e04e",
+      "status" : "failed",
+      "statusDetails" : "Error: Site does not have premium plan",
+      "time" : {
+        "start" : 1589210801112,
+        "stop" : 1589210919741,
+        "duration" : 118629
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d8ed44d1cd14ade9.json",
+  "statusDetailsSafe" : {
+    "message" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
+    "trace" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id\n                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)\n                    at new Promise (<anonymous>)\n                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)\n                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+    "flaky" : true
+  },
+  "statusMessage" : {
+    "present" : true
+  },
+  "parameterValues" : [ ]
+}
