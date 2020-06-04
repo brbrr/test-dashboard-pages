@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1591270383469' stop='1591270470344'>
+    <name>Paid blocks</name>
+    <title>Paid blocks</title>
+    <test-cases>
+        <test-case start='1591270405002' status='failed' stop='1591270451963'>
+            <name>MailChimp Block</name>
+            <title>MailChimp Block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1591270405004' status='passed' stop='1591270411220'>
+                    <name>Can visit the block editor and add a MailChimp block</name>
+                    <title>Can visit the block editor and add a MailChimp block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1591270411220' status='undefined'>
+                    <name>Can connect to a MailChimp</name>
+                    <title>Can connect to a MailChimp</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timed out in 25000ms.</message>
+                <stack-trace>Timed out in 25000ms.</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1591270451963' status='failed' stop='1591270462997'>
+            <name>Simple Payment block</name>
+            <title>Simple Payment block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1591270451964' status='passed' stop='1591270455887'>
+                    <name>Can visit the block editor and add a Simple Payment block</name>
+                    <title>Can visit the block editor and add a Simple Payment block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1591270455887' status='passed' stop='1591270460284'>
+                    <name>Can fill details of Simple Payment block</name>
+                    <title>Can fill details of Simple Payment block</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: MailChimp Block' source='8c555c0d-f344-462f-ace3-0c291027aa68-attachment.png' type='image/png' size='68774'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591270460284' status='passed' stop='1591270462729'>
+                    <name>Can publish a post and assert that Simple Payment block is rendered</name>
+                    <title>Can publish a post and assert that Simple Payment block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector "div.mailchimp .foldable-card__summary-expanded button:not([disabled])" failed: timeout 30000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector "div.mailchimp .foldable-card__summary-expanded button:not([disabled])" failed: timeout 30000ms exceeded
+                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)
+                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)
+                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)
+                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7
+                    at new Promise (&lt;anonymous>)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1591270462997' status='passed' stop='1591270468531'>
+            <name>WordAds block</name>
+            <title>WordAds block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1591270462998' status='passed' stop='1591270465766'>
+                    <name>Can visit the block editor and add a WordAds block</name>
+                    <title>Can visit the block editor and add a WordAds block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1591270465766' status='passed' stop='1591270466066'>
+                    <name>Can switch to Wide Skyscraper ad format</name>
+                    <title>Can switch to Wide Skyscraper ad format</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1591270466066' status='passed' stop='1591270468498'>
+                    <name>Can publish a post and assert that WordAds block is rendered</name>
+                    <title>Can publish a post and assert that WordAds block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
