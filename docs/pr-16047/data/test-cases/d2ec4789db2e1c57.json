@@ -1,5 +1,5 @@
 {
-  "uid" : "e2df5636e51d4a46",
+  "uid" : "d2ec4789db2e1c57",
   "name" : "In-place",
   "fullName" : "Connection.In-place",
   "historyId" : "ad5f1e14898f92a50fac41fda7599983",
@@ -14,7 +14,7 @@
   "statusDetails" : {
     "message" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
     "trace" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id\n                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)\n                    at new Promise (<anonymous>)\n                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)\n                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
@@ -22,7 +22,7 @@
     "statusDetails" : {
       "message" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
       "trace" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id\n                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)\n                    at new Promise (<anonymous>)\n                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)\n                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
-      "flaky" : true
+      "flaky" : false
     },
     "steps" : [ {
       "name" : "Can start in-place connection",
@@ -37,9 +37,9 @@
       },
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "a50f475e13836085",
+        "uid" : "753c1c68c7bc1569",
         "name" : "Test failed: Connection :: In-place",
-        "source" : "a50f475e13836085.png",
+        "source" : "753c1c68c7bc1569.png",
         "type" : "image/png",
         "size" : 120728
       } ],
@@ -75,31 +75,15 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "76ff8f7bba491a9b",
-      "status" : "failed",
-      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
-      "time" : {
-        "start" : 1591177461208,
-        "stop" : 1591177493138,
-        "duration" : 31930
-      }
-    } ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "e2df5636e51d4a46.json",
+  "source" : "d2ec4789db2e1c57.json",
   "statusDetailsSafe" : {
     "message" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
     "trace" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id\n                    at Promise (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:183:56)\n                    at new Promise (<anonymous>)\n                    at CDPSession.send (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Connection.js:182:12)\n                    at ExecutionContext._adoptElementHandle (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/ExecutionContext.js:204:41)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:631:47)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "present" : true

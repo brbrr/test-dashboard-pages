@@ -1,28 +1,28 @@
 {
-  "uid" : "be7ed1a621633812",
-  "name" : "Eventbrite block",
-  "fullName" : "Free blocks.Eventbrite block",
-  "historyId" : "87adddd8242e0efdefa8ae2567cea22b",
+  "uid" : "af5d5870ba4d07f1",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1591178011840,
-    "stop" : 1591178021534,
-    "duration" : 9694
+    "start" : 1591719971120,
+    "stop" : 1591719994026,
+    "duration" : 22906
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Eventbrite block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1591178011841,
-        "stop" : 1591178018572,
-        "duration" : 6731
+        "start" : 1591719971130,
+        "stop" : 1591719993149,
+        "duration" : 22019
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post with a Eventbrite block",
+      "name" : "Can assert that site is connected",
       "time" : {
-        "start" : 1591178018572,
-        "stop" : 1591178021185,
-        "duration" : 2613
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can assert that Eventbrite block is rendered",
-      "time" : {
-        "start" : 1591178021185,
-        "stop" : 1591178021530,
-        "duration" : 345
+        "start" : 1591719993149,
+        "stop" : 1591719994012,
+        "duration" : 863
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Eventbrite block"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -93,20 +78,30 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "f38abb88ee9c5e93",
-      "status" : "passed",
+      "uid" : "d2ec4789db2e1c57",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (DOM.describeNode): Cannot find context with specified id",
       "time" : {
-        "start" : 1591177435255,
-        "stop" : 1591177443224,
-        "duration" : 7969
+        "start" : 1591178041668,
+        "stop" : 1591178042451,
+        "duration" : 783
+      }
+    }, {
+      "uid" : "a83c59f2dbfab0b8",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1591177461208,
+        "stop" : 1591177493138,
+        "duration" : 31930
       }
     } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "be7ed1a621633812.json",
+  "source" : "af5d5870ba4d07f1.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "present" : false
