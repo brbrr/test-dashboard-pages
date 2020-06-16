@@ -1,30 +1,40 @@
 {
-  "uid" : "3f929bda6b2eeec1",
+  "uid" : "bc32e091d2e95edf",
   "name" : "MailChimp Block",
   "fullName" : "Paid blocks.MailChimp Block",
   "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
   "time" : {
-    "start" : 1592269248799,
-    "stop" : 1592269266880,
-    "duration" : 18081
+    "start" : 1592269256223,
+    "stop" : 1592269304667,
+    "duration" : 48444
   },
   "description" : "",
   "descriptionHtml" : "",
-  "status" : "passed",
+  "status" : "failed",
   "statusDetails" : {
+    "message" : "Timed out in 25000ms.",
+    "trace" : "Timed out in 25000ms.",
     "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
-    "status" : "passed",
+    "status" : "failed",
+    "statusDetails" : {
+      "message" : "Timed out in 25000ms.",
+      "trace" : "Timed out in 25000ms.",
+      "flaky" : false
+    },
     "steps" : [ {
       "name" : "Can visit the block editor and add a MailChimp block",
       "time" : {
-        "start" : 1592269248801,
-        "stop" : 1592269255584,
-        "duration" : 6783
+        "start" : 1592269256225,
+        "stop" : 1592269263724,
+        "duration" : 7499
       },
       "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
@@ -35,26 +45,14 @@
     }, {
       "name" : "Can connect to a MailChimp",
       "time" : {
-        "start" : 1592269255585,
-        "stop" : 1592269263764,
-        "duration" : 8179
+        "start" : 1592269263724,
+        "stop" : 0,
+        "duration" : -1592269263724
       },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can publish a post and assert that MailChimp block is rendered",
-      "time" : {
-        "start" : 1592269263764,
-        "stop" : 1592269266869,
-        "duration" : 3105
+      "status" : "unknown",
+      "statusDetails" : {
+        "flaky" : false
       },
-      "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
@@ -65,9 +63,9 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
+    "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
@@ -92,16 +90,30 @@
   "hidden" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
-    "categories" : [ ],
+    "retries" : [ {
+      "uid" : "8eb856b87fd02fc9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592269248799,
+        "stop" : 1592269266880,
+        "duration" : 18081
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
     "tags" : [ ]
   },
-  "source" : "3f929bda6b2eeec1.json",
+  "source" : "bc32e091d2e95edf.json",
   "statusDetailsSafe" : {
+    "message" : "Timed out in 25000ms.",
+    "trace" : "Timed out in 25000ms.",
     "flaky" : false
   },
   "statusMessage" : {
-    "present" : false
+    "present" : true
   },
   "parameterValues" : [ ]
 }
