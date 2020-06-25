@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1593112366282' stop='1593112398909'>
+    <name>Connection</name>
+    <title>Connection</title>
+    <test-cases>
+        <test-case start='1593112368687' status='failed' stop='1593112398425'>
+            <name>In-place</name>
+            <title>In-place</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1593112368688' status='passed' stop='1593112397560'>
+                    <name>Can start in-place connection</name>
+                    <title>Can start in-place connection</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1593112397560' status='passed' stop='1593112398406'>
+                    <name>Can assert that site is connected</name>
+                    <title>Can assert that site is connected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read property 'currentStep' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'currentStep' of undefined
+                    at Allure.Object.&lt;anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)
+                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:60:21)
+                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
