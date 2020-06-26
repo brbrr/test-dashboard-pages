@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1593190841016' stop='1593190893196'>
+    <name>Free blocks</name>
+    <title>Free blocks</title>
+    <test-cases>
+        <test-case start='1593190852121' status='passed' stop='1593190859197'>
+            <name>Pinterest block</name>
+            <title>Pinterest block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1593190852122' status='passed' stop='1593190856941'>
+                    <name>Can visit the block editor and add a Pinterest block</name>
+                    <title>Can visit the block editor and add a Pinterest block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1593190856941' status='passed' stop='1593190858704'>
+                    <name>Can publish a post with a Pinterest block</name>
+                    <title>Can publish a post with a Pinterest block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1593190858704' status='passed' stop='1593190859183'>
+                    <name>Can assert that Pinterest block is rendered</name>
+                    <title>Can assert that Pinterest block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1593190859197' status='failed' stop='1593190893196'>
+            <name>Eventbrite block</name>
+            <title>Eventbrite block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1593190859198' status='undefined'>
+                    <name>Can visit the block editor and add a Eventbrite block</name>
+                    <title>Can visit the block editor and add a Eventbrite block</title>
+                    <attachments>
+                        <attachment title='Test failed: Free blocks :: Eventbrite block' source='08ad8cf1-5b0f-4dbc-aae9-a1beae7372dc-attachment.png' type='image/png' size='58681'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector ".wp-block-jetpack-eventbrite .components-sandbox" failed: timeout 30000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector ".wp-block-jetpack-eventbrite .components-sandbox" failed: timeout 30000ms exceeded
+                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)
+                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)
+                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)
+                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)
+                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:34:30)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7
+                    at new Promise (&lt;anonymous>)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
