@@ -1,28 +1,28 @@
 {
-  "uid" : "8cdbf225975cb42c",
-  "name" : "WordAds block",
-  "fullName" : "Paid blocks.WordAds block",
-  "historyId" : "238504ef6899b91109172184716a1714",
+  "uid" : "93e21058cbb25bbd",
+  "name" : "MailChimp Block",
+  "fullName" : "Paid blocks.MailChimp Block",
+  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
   "time" : {
-    "start" : 1594142148022,
-    "stop" : 1594142154913,
-    "duration" : 6891
+    "start" : 1594236989539,
+    "stop" : 1594237011193,
+    "duration" : 21654
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a WordAds block",
+      "name" : "Can visit the block editor and add a MailChimp block",
       "time" : {
-        "start" : 1594142148022,
-        "stop" : 1594142151278,
-        "duration" : 3256
+        "start" : 1594236989541,
+        "stop" : 1594236996861,
+        "duration" : 7320
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can switch to Wide Skyscraper ad format",
+      "name" : "Can connect to a MailChimp",
       "time" : {
-        "start" : 1594142151278,
-        "stop" : 1594142152225,
-        "duration" : 947
+        "start" : 1594236996861,
+        "stop" : 1594237006645,
+        "duration" : 9784
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post and assert that WordAds block is rendered",
+      "name" : "Can publish a post and assert that MailChimp block is rendered",
       "time" : {
-        "start" : 1594142152225,
-        "stop" : 1594142154864,
-        "duration" : 2639
+        "start" : 1594237006645,
+        "stop" : 1594237011139,
+        "duration" : 4494
       },
       "status" : "passed",
       "steps" : [ ],
@@ -79,7 +79,7 @@
     "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "WordAds block"
+    "value" : "MailChimp Block"
   }, {
     "name" : "package",
     "value" : "Paid blocks"
@@ -92,13 +92,22 @@
   "hidden" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "e7f94c8ffae9e70d",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"#login input[type='submit']\" failed: timeout 30000ms exceeded",
+      "time" : {
+        "start" : 1594142076463,
+        "stop" : 1594142134677,
+        "duration" : 58214
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "8cdbf225975cb42c.json",
+  "source" : "93e21058cbb25bbd.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "present" : false
