@@ -1,28 +1,28 @@
 {
-  "uid" : "1505daa70fa65659",
-  "name" : "Simple Payment block",
-  "fullName" : "Paid blocks.Simple Payment block",
-  "historyId" : "c25489f86a2b4a7e14c74966e7adb039",
+  "uid" : "d1af45076c493692",
+  "name" : "MailChimp Block",
+  "fullName" : "Paid blocks.MailChimp Block",
+  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
   "time" : {
-    "start" : 1591030471256,
-    "stop" : 1591030480670,
-    "duration" : 9414
+    "start" : 1594225428689,
+    "stop" : 1594225449535,
+    "duration" : 20846
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Simple Payment block",
+      "name" : "Can visit the block editor and add a MailChimp block",
       "time" : {
-        "start" : 1591030471257,
-        "stop" : 1591030474410,
-        "duration" : 3153
+        "start" : 1594225428691,
+        "stop" : 1594225435820,
+        "duration" : 7129
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can fill details of Simple Payment block",
+      "name" : "Can connect to a MailChimp",
       "time" : {
-        "start" : 1591030474410,
-        "stop" : 1591030478321,
-        "duration" : 3911
+        "start" : 1594225435820,
+        "stop" : 1594225445393,
+        "duration" : 9573
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post and assert that Simple Payment block is rendered",
+      "name" : "Can publish a post and assert that MailChimp block is rendered",
       "time" : {
-        "start" : 1591030478321,
-        "stop" : 1591030480667,
-        "duration" : 2346
+        "start" : 1594225445393,
+        "stop" : 1594225449448,
+        "duration" : 4055
       },
       "status" : "passed",
       "steps" : [ ],
@@ -79,7 +79,7 @@
     "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "Simple Payment block"
+    "value" : "MailChimp Block"
   }, {
     "name" : "package",
     "value" : "Paid blocks"
@@ -92,13 +92,30 @@
   "hidden" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "a6073d1fa2c52f98",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"#login input[type='submit']\" failed: timeout 30000ms exceeded",
+      "time" : {
+        "start" : 1594141592608,
+        "stop" : 1594141649910,
+        "duration" : 57302
+      }
+    }, {
+      "uid" : "56391e054f1191c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1591030454100,
+        "stop" : 1591030471256,
+        "duration" : 17156
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1505daa70fa65659.json",
+  "source" : "d1af45076c493692.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "present" : false
