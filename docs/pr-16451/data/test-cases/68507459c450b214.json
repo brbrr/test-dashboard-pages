@@ -1,12 +1,12 @@
 {
-  "uid" : "20da50a77cb7a95",
-  "name" : "In-place",
-  "fullName" : "Connection.In-place",
-  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "uid" : "68507459c450b214",
+  "name" : "MailChimp Block",
+  "fullName" : "Paid blocks.MailChimp Block",
+  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
   "time" : {
-    "start" : 1594312704547,
-    "stop" : 1594312729970,
-    "duration" : 25423
+    "start" : 1594312518105,
+    "stop" : 1594312537944,
+    "duration" : 19839
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -14,7 +14,7 @@
   "statusDetails" : {
     "message" : "TypeError: Cannot read property 'currentStep' of undefined",
     "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
@@ -22,84 +22,98 @@
     "statusDetails" : {
       "message" : "TypeError: Cannot read property 'currentStep' of undefined",
       "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",
-      "flaky" : true
+      "flaky" : false
     },
     "steps" : [ {
-      "name" : "Can start in-place connection",
+      "name" : "Can visit the block editor and add a MailChimp block",
       "time" : {
-        "start" : 1594312704547,
-        "stop" : 0,
-        "duration" : -1594312704547
+        "start" : 1594312518106,
+        "stop" : 1594312525231,
+        "duration" : 7125
       },
-      "status" : "unknown",
+      "status" : "passed",
       "statusDetails" : {
         "flaky" : false
       },
       "steps" : [ ],
-      "attachments" : [ {
-        "uid" : "e13b243c752357a6",
-        "name" : "Test failed: Connection :: In-place",
-        "source" : "e13b243c752357a6.png",
-        "type" : "image/png",
-        "size" : 155298
-      } ],
+      "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "attachmentsCount" : 1,
+      "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true
+      "hasContent" : false
+    }, {
+      "name" : "Can connect to a MailChimp",
+      "time" : {
+        "start" : 1594312525231,
+        "stop" : 1594312533674,
+        "duration" : 8443
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can publish a post and assert that MailChimp block is rendered",
+      "time" : {
+        "start" : 1594312533674,
+        "stop" : 1594312537939,
+        "duration" : 4265
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
-    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
     "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testClass",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "In-place"
+    "value" : "MailChimp Block"
   }, {
     "name" : "package",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "c13d4eecb939d4c",
-      "status" : "failed",
-      "statusDetails" : "TypeError: Cannot read property 'currentStep' of undefined",
-      "time" : {
-        "start" : 1594311186765,
-        "stop" : 1594311212197,
-        "duration" : 25432
-      }
-    } ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "20da50a77cb7a95.json",
+  "source" : "68507459c450b214.json",
   "statusDetailsSafe" : {
     "message" : "TypeError: Cannot read property 'currentStep' of undefined",
     "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "present" : true
