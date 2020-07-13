@@ -1,12 +1,12 @@
 {
-  "uid" : "f4e70811bfddb8a4",
-  "name" : "In-place",
-  "fullName" : "Connection.In-place",
-  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "uid" : "6e90148640139727",
+  "name" : "Pay with PayPal",
+  "fullName" : "Paid blocks.Pay with PayPal",
+  "historyId" : "e0ca1dae1232c8da376862907c199a8b",
   "time" : {
-    "start" : 1594630416029,
-    "stop" : 1594630441510,
-    "duration" : 25481
+    "start" : 1594630256070,
+    "stop" : 1594630266605,
+    "duration" : 10535
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -14,7 +14,7 @@
   "statusDetails" : {
     "message" : "TypeError: Cannot read property 'currentStep' of undefined",
     "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
@@ -22,84 +22,98 @@
     "statusDetails" : {
       "message" : "TypeError: Cannot read property 'currentStep' of undefined",
       "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",
-      "flaky" : true
+      "flaky" : false
     },
     "steps" : [ {
-      "name" : "Can start in-place connection",
+      "name" : "Can visit the block editor and add a Pay with PayPal block",
       "time" : {
-        "start" : 1594630416031,
-        "stop" : 0,
-        "duration" : -1594630416031
+        "start" : 1594630256071,
+        "stop" : 1594630259683,
+        "duration" : 3612
       },
-      "status" : "unknown",
+      "status" : "passed",
       "statusDetails" : {
         "flaky" : false
       },
       "steps" : [ ],
-      "attachments" : [ {
-        "uid" : "3b91630f7fba6fbe",
-        "name" : "Test failed: Connection :: In-place",
-        "source" : "3b91630f7fba6fbe.png",
-        "type" : "image/png",
-        "size" : 155364
-      } ],
+      "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "attachmentsCount" : 1,
+      "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true
+      "hasContent" : false
+    }, {
+      "name" : "Can fill details of Pay with PayPal block",
+      "time" : {
+        "start" : 1594630259683,
+        "stop" : 1594630264145,
+        "duration" : 4462
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can publish a post and assert that Pay with PayPal block is rendered",
+      "time" : {
+        "start" : 1594630264145,
+        "stop" : 1594630266560,
+        "duration" : 2415
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
-    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
     "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testClass",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "In-place"
+    "value" : "Pay with PayPal"
   }, {
     "name" : "package",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "941a0b7160975d65",
-      "status" : "failed",
-      "statusDetails" : "TypeError: Cannot read property 'currentStep' of undefined",
-      "time" : {
-        "start" : 1594401450089,
-        "stop" : 1594401475480,
-        "duration" : 25391
-      }
-    } ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "f4e70811bfddb8a4.json",
+  "source" : "6e90148640139727.json",
   "statusDetailsSafe" : {
     "message" : "TypeError: Cannot read property 'currentStep' of undefined",
     "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "present" : true
