@@ -1,28 +1,28 @@
 {
-  "uid" : "78d97ea2ce2e96ff",
-  "name" : "In-place",
-  "fullName" : "Connection.In-place",
-  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "uid" : "b7d546c780dc40c3",
+  "name" : "WordAds block",
+  "fullName" : "Paid blocks.WordAds block",
+  "historyId" : "238504ef6899b91109172184716a1714",
   "time" : {
-    "start" : 1595233780131,
-    "stop" : 1595233797983,
-    "duration" : 17852
+    "start" : 1595233716659,
+    "stop" : 1595233722478,
+    "duration" : 5819
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can start in-place connection",
+      "name" : "Can visit the block editor and add a WordAds block",
       "time" : {
-        "start" : 1595233780133,
-        "stop" : 1595233797175,
-        "duration" : 17042
+        "start" : 1595233716660,
+        "stop" : 1595233719453,
+        "duration" : 2793
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can assert that site is connected",
+      "name" : "Can switch to Wide Skyscraper ad format",
       "time" : {
-        "start" : 1595233797175,
-        "stop" : 1595233797953,
-        "duration" : 778
+        "start" : 1595233719453,
+        "stop" : 1595233720333,
+        "duration" : 880
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can publish a post and assert that WordAds block is rendered",
+      "time" : {
+        "start" : 1595233720333,
+        "stop" : 1595233722445,
+        "duration" : 2112
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -58,41 +73,29 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testClass",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "In-place"
+    "value" : "WordAds block"
   }, {
     "name" : "package",
-    "value" : "Connection"
+    "value" : "Paid blocks"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "e03014629200eaac",
-      "status" : "failed",
-      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
-      "time" : {
-        "start" : 1593856408493,
-        "stop" : 1593856438758,
-        "duration" : 30265
-      }
-    } ],
-    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "78d97ea2ce2e96ff.json",
+  "source" : "b7d546c780dc40c3.json",
   "statusDetailsSafe" : {
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "present" : false
