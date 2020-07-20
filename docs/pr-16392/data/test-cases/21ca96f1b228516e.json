@@ -1,12 +1,12 @@
 {
-  "uid" : "67c8649516ccb82b",
-  "name" : "Pay with PayPal",
-  "fullName" : "Paid blocks.Pay with PayPal",
-  "historyId" : "e0ca1dae1232c8da376862907c199a8b",
+  "uid" : "21ca96f1b228516e",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1594427744432,
-    "stop" : 1594427758392,
-    "duration" : 13960
+    "start" : 1594427920666,
+    "stop" : 1594427946075,
+    "duration" : 25409
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -25,106 +25,61 @@
       "flaky" : false
     },
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Pay with PayPal block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1594427744432,
-        "stop" : 1594427750798,
-        "duration" : 6366
+        "start" : 1594427920667,
+        "stop" : 0,
+        "duration" : -1594427920667
       },
-      "status" : "passed",
+      "status" : "unknown",
       "statusDetails" : {
         "flaky" : false
       },
       "steps" : [ ],
-      "attachments" : [ ],
+      "attachments" : [ {
+        "uid" : "6bc74b6c720615b9",
+        "name" : "Test failed: Connection :: In-place",
+        "source" : "6bc74b6c720615b9.png",
+        "type" : "image/png",
+        "size" : 155402
+      } ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
+      "attachmentsCount" : 1,
       "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can fill details of Pay with PayPal block",
-      "time" : {
-        "start" : 1594427750798,
-        "stop" : 1594427755575,
-        "duration" : 4777
-      },
-      "status" : "passed",
-      "statusDetails" : {
-        "flaky" : false
-      },
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can publish a post and assert that Pay with PayPal block is rendered",
-      "time" : {
-        "start" : 1594427755575,
-        "stop" : 1594427758311,
-        "duration" : 2736
-      },
-      "status" : "passed",
-      "statusDetails" : {
-        "flaky" : false
-      },
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
+      "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "attachmentsCount" : 0,
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Pay with PayPal"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "2e222a71c06d5445",
-      "status" : "passed",
-      "time" : {
-        "start" : 1593844398894,
-        "stop" : 1593844409733,
-        "duration" : 10839
-      }
-    } ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "67c8649516ccb82b.json",
+  "source" : "21ca96f1b228516e.json",
   "statusDetailsSafe" : {
     "message" : "TypeError: Cannot read property 'currentStep' of undefined",
     "trace" : "TypeError: Cannot read property 'currentStep' of undefined\n                    at Allure.Object.<anonymous>.Allure.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/allure-js-commons/index.js:86:45)\n                    at Reporter.addAttachment (/home/travis/build/Automattic/jetpack/node_modules/jest-allure/dist/Reporter.js:64:21)\n                    at addAttachment (/home/travis/build/Automattic/jetpack/tests/e2e/lib/setup-env.js:24:12)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)",

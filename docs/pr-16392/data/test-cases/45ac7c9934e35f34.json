@@ -1,28 +1,28 @@
 {
-  "uid" : "97a7490051dfbe1f",
-  "name" : "Pinterest block",
-  "fullName" : "Free blocks.Pinterest block",
-  "historyId" : "cb61587e7466ec3d1c2995268abd91a7",
+  "uid" : "45ac7c9934e35f34",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1594427785369,
-    "stop" : 1594427793783,
-    "duration" : 8414
+    "start" : 1595235063122,
+    "stop" : 1595235081972,
+    "duration" : 18850
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Pinterest block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1594427785369,
-        "stop" : 1594427791283,
-        "duration" : 5914
+        "start" : 1595235063123,
+        "stop" : 1595235081060,
+        "duration" : 17937
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post with a Pinterest block",
+      "name" : "Can assert that site is connected",
       "time" : {
-        "start" : 1594427791283,
-        "stop" : 1594427793304,
-        "duration" : 2021
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can assert that Pinterest block is rendered",
-      "time" : {
-        "start" : 1594427793304,
-        "stop" : 1594427793780,
-        "duration" : 476
+        "start" : 1595235081060,
+        "stop" : 1595235081961,
+        "duration" : 901
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Pinterest block"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -93,20 +78,30 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "b51b6b9e91254616",
-      "status" : "passed",
+      "uid" : "21ca96f1b228516e",
+      "status" : "failed",
+      "statusDetails" : "TypeError: Cannot read property 'currentStep' of undefined",
       "time" : {
-        "start" : 1593844437950,
-        "stop" : 1593844445287,
-        "duration" : 7337
+        "start" : 1594427920666,
+        "stop" : 1594427946075,
+        "duration" : 25409
+      }
+    }, {
+      "uid" : "81d11a9f748b9674",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1593844500190,
+        "stop" : 1593844531722,
+        "duration" : 31532
       }
     } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "97a7490051dfbe1f.json",
+  "source" : "45ac7c9934e35f34.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "present" : false
