@@ -3,7 +3,7 @@
 if [ "$(uname)" == "Darwin" ]; then
     date=$(date -v-20d +%Y-%m-%d)       
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    date --date="20 days ago" +%Y-%m-%d
+    date=$(date --date="20 days ago" +%Y-%m-%d)
 fi
 
 echo $date
