@@ -1,28 +1,28 @@
 {
-  "uid" : "91949a265dd5f091",
-  "name" : "Eventbrite block",
-  "fullName" : "Free blocks.Eventbrite block",
-  "historyId" : "87adddd8242e0efdefa8ae2567cea22b",
+  "uid" : "afab9dc473b21133",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1598998053221,
-    "stop" : 1598998059710,
-    "duration" : 6489
+    "start" : 1599015517223,
+    "stop" : 1599015542499,
+    "duration" : 25276
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Eventbrite block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1598998053222,
-        "stop" : 1598998056860,
-        "duration" : 3638
+        "start" : 1599015517224,
+        "stop" : 1599015541983,
+        "duration" : 24759
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post with a Eventbrite block",
+      "name" : "Can assert that site is connected",
       "time" : {
-        "start" : 1598998056860,
-        "stop" : 1598998059430,
-        "duration" : 2570
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can assert that Eventbrite block is rendered",
-      "time" : {
-        "start" : 1598998059430,
-        "stop" : 1598998059686,
-        "duration" : 256
+        "start" : 1599015541983,
+        "stop" : 1599015542280,
+        "duration" : 297
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Eventbrite block"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Free blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -93,20 +78,30 @@
   "extra" : {
     "severity" : "normal",
     "retries" : [ {
-      "uid" : "c69e0a733024e2be",
-      "status" : "passed",
+      "uid" : "900d4ad5f1515a77",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"#adminmenumain\" failed: timeout 25000ms exceeded",
       "time" : {
-        "start" : 1598996275052,
-        "stop" : 1598996284682,
-        "duration" : 9630
+        "start" : 1598998337473,
+        "stop" : 1598998365101,
+        "duration" : 27628
+      }
+    }, {
+      "uid" : "3bd98f7dcdcbd906",
+      "status" : "failed",
+      "statusDetails" : "Error: Node is either not visible or not an HTMLElement",
+      "time" : {
+        "start" : 1598996565544,
+        "stop" : 1598996588702,
+        "duration" : 23158
       }
     } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "91949a265dd5f091.json",
+  "source" : "afab9dc473b21133.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "empty" : true,
