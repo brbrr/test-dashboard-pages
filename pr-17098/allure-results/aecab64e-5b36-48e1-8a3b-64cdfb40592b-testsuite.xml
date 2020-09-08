@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599565472138' stop='1599565538386'>
+    <name>Jetpack updater</name>
+    <title>Jetpack updater</title>
+    <test-cases>
+        <test-case start='1599565499013' status='failed' stop='1599565501653'>
+            <name>Plugin updater</name>
+            <title>Plugin updater</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1599565499014' status='undefined'>
+                    <name>Can login and navigate to Plugins page</name>
+                    <title>Can login and navigate to Plugins page</title>
+                    <attachments>
+                        <attachment title='Test failed: Jetpack updater :: Plugin updater' source='1e1d3b45-e375-413b-aaca-8c651eb54d20-attachment.png' type='image/png' size='32655'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError [ERR_INVALID_URL]: Invalid URL: null</message>
+                <stack-trace>TypeError [ERR_INVALID_URL]: Invalid URL: null
+                    at onParseError (internal/url.js:241:17)
+                    at new URL (internal/url.js:319:5)
+                    at _callee5$ (/home/travis/build/Automattic/jetpack/tests/e2e/lib/flows/jetpack-connect.js:125:15)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7
+                    at new Promise (&lt;anonymous>)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
