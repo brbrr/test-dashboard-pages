@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599635221049' stop='1599635299373'>
+    <name>Jetpack updater</name>
+    <title>Jetpack updater</title>
+    <test-cases>
+        <test-case start='1599635249604' status='failed' stop='1599635263452'>
+            <name>Plugin updater</name>
+            <title>Plugin updater</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1599635249605' status='passed' stop='1599635252633'>
+                    <name>Can login and navigate to Plugins page</name>
+                    <title>Can login and navigate to Plugins page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1599635252634' status='undefined'>
+                    <name>Can update Jetpack</name>
+                    <title>Can update Jetpack</title>
+                    <attachments>
+                        <attachment title='Test failed: Jetpack updater :: Plugin updater' source='b4b6f30e-7778-471a-bc61-67f07413086b-attachment.png' type='image/png' size='277655'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: expect(received).not.toBe(expected) // Object.is equality
+                
+                Expected: not "8.9"</message>
+                <stack-trace>Error: expect(received).not.toBe(expected) // Object.is equality
+                
+                Expected: not "8.9"
+                    at toBe (/home/travis/build/Automattic/jetpack/tests/e2e/specs/plugin-updater.test.js:44:32)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
