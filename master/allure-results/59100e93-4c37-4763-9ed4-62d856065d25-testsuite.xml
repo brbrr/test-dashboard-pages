@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1599668830290' stop='1599668938873'>
+    <name>Paid blocks</name>
+    <title>Paid blocks</title>
+    <test-cases>
+        <test-case start='1599668868586' status='failed' stop='1599668911625'>
+            <name>MailChimp Block</name>
+            <title>MailChimp Block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1599668868588' status='passed' stop='1599668873494'>
+                    <name>Can visit the block editor and add a MailChimp block</name>
+                    <title>Can visit the block editor and add a MailChimp block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1599668873494' status='undefined'>
+                    <name>Can connect to a MailChimp</name>
+                    <title>Can connect to a MailChimp</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: MailChimp Block' source='36d081db-1f3a-476f-b0b3-e28f14a20cba-attachment.png' type='image/png' size='147344'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for XPath "//span[contains(text(), 'e2etesting')]" failed: timeout 30000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for XPath "//span[contains(text(), 'e2etesting')]" failed: timeout 30000ms exceeded
+                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)
+                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)
+                    at DOMWorld.waitForXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:441:17)
+                    at Frame.waitForXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:642:47)
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)
+                    at Page.waitForXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1131:29)
+                    at ConnectionsPage.waitForXPath (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wpcom/connections.js:46:19)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)
+                  -- ASYNC --
+                    at Frame.&lt;anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)
+                    at Page.waitForXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1131:29)
+                    at ConnectionsPage.waitForXPath (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wpcom/connections.js:46:19)
+                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.(anonymous function) [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)
+                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1599668911625' status='passed' stop='1599668920521'>
+            <name>Pay with PayPal</name>
+            <title>Pay with PayPal</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1599668911626' status='passed' stop='1599668914800'>
+                    <name>Can visit the block editor and add a Pay with PayPal block</name>
+                    <title>Can visit the block editor and add a Pay with PayPal block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1599668914800' status='passed' stop='1599668918505'>
+                    <name>Can fill details of Pay with PayPal block</name>
+                    <title>Can fill details of Pay with PayPal block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1599668918505' status='passed' stop='1599668920250'>
+                    <name>Can publish a post and assert that Pay with PayPal block is rendered</name>
+                    <title>Can publish a post and assert that Pay with PayPal block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1599668920521' status='passed' stop='1599668932138'>
+            <name>WordAds block</name>
+            <title>WordAds block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1599668920522' status='passed' stop='1599668922998'>
+                    <name>Can visit the block editor and add a WordAds block</name>
+                    <title>Can visit the block editor and add a WordAds block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1599668922998' status='passed' stop='1599668923812'>
+                    <name>Can switch to Wide Skyscraper ad format</name>
+                    <title>Can switch to Wide Skyscraper ad format</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1599668923812' status='passed' stop='1599668932080'>
+                    <name>Can publish a post and assert that WordAds block is rendered</name>
+                    <title>Can publish a post and assert that WordAds block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
