@@ -1,28 +1,28 @@
 {
-  "uid" : "a4ff583182b56ca2",
-  "name" : "MailChimp Block",
-  "fullName" : "Paid blocks.MailChimp Block",
-  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
+  "uid" : "30c524352997fc7c",
+  "name" : "Pay with PayPal",
+  "fullName" : "Paid blocks.Pay with PayPal",
+  "historyId" : "e0ca1dae1232c8da376862907c199a8b",
   "time" : {
-    "start" : 1600103342288,
-    "stop" : 1600103360816,
-    "duration" : 18528
+    "start" : 1600116272090,
+    "stop" : 1600116281052,
+    "duration" : 8962
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a MailChimp block",
+      "name" : "Can visit the block editor and add a Pay with PayPal block",
       "time" : {
-        "start" : 1600103342292,
-        "stop" : 1600103347179,
-        "duration" : 4887
+        "start" : 1600116272092,
+        "stop" : 1600116275193,
+        "duration" : 3101
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can connect to a MailChimp",
+      "name" : "Can fill details of Pay with PayPal block",
       "time" : {
-        "start" : 1600103347179,
-        "stop" : 1600103355023,
-        "duration" : 7844
+        "start" : 1600116275193,
+        "stop" : 1600116278941,
+        "duration" : 3748
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post and assert that MailChimp block is rendered",
+      "name" : "Can publish a post and assert that Pay with PayPal block is rendered",
       "time" : {
-        "start" : 1600103355023,
-        "stop" : 1600103360577,
-        "duration" : 5554
+        "start" : 1600116278941,
+        "stop" : 1600116281011,
+        "duration" : 2070
       },
       "status" : "passed",
       "steps" : [ ],
@@ -79,7 +79,7 @@
     "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "MailChimp Block"
+    "value" : "Pay with PayPal"
   }, {
     "name" : "package",
     "value" : "Paid blocks"
@@ -89,13 +89,33 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
+  "hidden" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b3c42a665ac7a0bd",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"div.mailchimp .foldable-card__summary-expanded button:not([disabled])\" failed: timeout 30000ms exceeded",
+      "time" : {
+        "start" : 1600114996139,
+        "stop" : 1600115009531,
+        "duration" : 13392
+      }
+    }, {
+      "uid" : "d5cdeb06e1ace1e2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1600103360818,
+        "stop" : 1600103369889,
+        "duration" : 9071
+      }
+    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "a4ff583182b56ca2.json",
+  "source" : "30c524352997fc7c.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "empty" : true,
