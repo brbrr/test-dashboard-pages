@@ -1,12 +1,12 @@
 {
-  "uid" : "2fc0692b4a9ef2fc",
-  "name" : "MailChimp Block",
-  "fullName" : "Paid blocks.MailChimp Block",
-  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
+  "uid" : "444de4f7688a9de9",
+  "name" : "In-place upgrading a plan from premium to professional",
+  "fullName" : "Connection.In-place upgrading a plan from premium to professional",
+  "historyId" : "5dc4dc569466d818eb009720991e2910",
   "time" : {
-    "start" : 1600255327723,
-    "stop" : 1600255342574,
-    "duration" : 14851
+    "start" : 1600255040800,
+    "stop" : 1600255181211,
+    "duration" : 140411
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -25,11 +25,11 @@
       "flaky" : false
     },
     "steps" : [ {
-      "name" : "Can visit the block editor and add a MailChimp block",
+      "name" : "Can set a sandbox cookie",
       "time" : {
-        "start" : 1600255327724,
-        "stop" : 1600255332566,
-        "duration" : 4842
+        "start" : 1600255085962,
+        "stop" : 1600255086709,
+        "duration" : 747
       },
       "status" : "passed",
       "statusDetails" : {
@@ -43,80 +43,61 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can connect to a MailChimp",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1600255332566,
-        "stop" : 1600255337843,
-        "duration" : 5277
+        "start" : 1600255086709,
+        "stop" : 0,
+        "duration" : -1600255086709
       },
-      "status" : "passed",
+      "status" : "unknown",
       "statusDetails" : {
         "flaky" : false
       },
       "steps" : [ ],
-      "attachments" : [ ],
+      "attachments" : [ {
+        "uid" : "89ddbee1639fd2d7",
+        "name" : "Test failed: Connection :: In-place upgrading a plan from premium to professional",
+        "source" : "89ddbee1639fd2d7.png",
+        "type" : "image/png",
+        "size" : 374117
+      } ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "attachmentsCount" : 0,
+      "attachmentsCount" : 1,
       "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can publish a post and assert that MailChimp block is rendered",
-      "time" : {
-        "start" : 1600255337843,
-        "stop" : 1600255342468,
-        "duration" : 4625
-      },
-      "status" : "passed",
-      "statusDetails" : {
-        "flaky" : false
-      },
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
+      "hasContent" : true
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : true,
     "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "MailChimp Block"
+    "value" : "In-place upgrading a plan from premium to professional"
   }, {
     "name" : "package",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "2fc0692b4a9ef2fc.json",
+  "source" : "444de4f7688a9de9.json",
   "statusDetailsSafe" : {
     "message" : "TimeoutError: waiting for selector \".plan-features__table button.is-premium-plan:not([disabled])\" failed: timeout 25000ms exceeded",
     "trace" : "TimeoutError: waiting for selector \".plan-features__table button.is-premium-plan:not([disabled])\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
