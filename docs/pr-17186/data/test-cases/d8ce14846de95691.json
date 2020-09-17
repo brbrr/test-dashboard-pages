@@ -1,12 +1,12 @@
 {
-  "uid" : "3474449ab46aae3a",
-  "name" : "WordAds block",
-  "fullName" : "Paid blocks.WordAds block",
-  "historyId" : "238504ef6899b91109172184716a1714",
+  "uid" : "d8ce14846de95691",
+  "name" : "MailChimp Block",
+  "fullName" : "Paid blocks.MailChimp Block",
+  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
   "time" : {
-    "start" : 1600344307136,
-    "stop" : 1600344387351,
-    "duration" : 80215
+    "start" : 1600344210325,
+    "stop" : 1600344224418,
+    "duration" : 14093
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -14,7 +14,7 @@
   "statusDetails" : {
     "message" : "Error: Invalid plan string: pro",
     "trace" : "Error: Invalid plan string: pro\n                    at JetpackPage._callee7$ (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wp-admin/jetpack.js:52:11)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)\n                    at JetpackPage.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n                    at JetpackPage.isPlan (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wp-admin/jetpack.js:267:24)",
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
@@ -22,37 +22,67 @@
     "statusDetails" : {
       "message" : "Error: Invalid plan string: pro",
       "trace" : "Error: Invalid plan string: pro\n                    at JetpackPage._callee7$ (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wp-admin/jetpack.js:52:11)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)\n                    at JetpackPage.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n                    at JetpackPage.isPlan (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wp-admin/jetpack.js:267:24)",
-      "flaky" : true
+      "flaky" : false
     },
     "steps" : [ {
-      "name" : "Can visit the block editor and add a WordAds block",
+      "name" : "Can visit the block editor and add a MailChimp block",
       "time" : {
-        "start" : 1600344307137,
-        "stop" : 0,
-        "duration" : -1600344307137
+        "start" : 1600344210327,
+        "stop" : 1600344215642,
+        "duration" : 5315
       },
-      "status" : "unknown",
+      "status" : "passed",
       "statusDetails" : {
         "flaky" : false
       },
       "steps" : [ ],
-      "attachments" : [ {
-        "uid" : "1211df3a48156f6d",
-        "name" : "Test failed: Paid blocks :: WordAds block",
-        "source" : "1211df3a48156f6d.png",
-        "type" : "image/png",
-        "size" : 32032
-      } ],
+      "attachments" : [ ],
       "parameters" : [ ],
       "stepsCount" : 0,
-      "attachmentsCount" : 1,
+      "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true
+      "hasContent" : false
+    }, {
+      "name" : "Can connect to a MailChimp",
+      "time" : {
+        "start" : 1600344215642,
+        "stop" : 1600344221112,
+        "duration" : 5470
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can publish a post and assert that MailChimp block is rendered",
+      "time" : {
+        "start" : 1600344221112,
+        "stop" : 1600344224414,
+        "duration" : 3302
+      },
+      "status" : "passed",
+      "statusDetails" : {
+        "flaky" : false
+      },
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
-    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
     "shouldDisplayMessage" : true,
     "hasContent" : true
   },
@@ -65,7 +95,7 @@
     "value" : "Paid blocks"
   }, {
     "name" : "testMethod",
-    "value" : "WordAds block"
+    "value" : "MailChimp Block"
   }, {
     "name" : "package",
     "value" : "Paid blocks"
@@ -75,31 +105,15 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "bd32960fd09361a7",
-      "status" : "failed",
-      "statusDetails" : "TimeoutError: waiting for selector \".current-plan\" failed: timeout 25000ms exceeded",
-      "time" : {
-        "start" : 1600286764567,
-        "stop" : 1600286843635,
-        "duration" : 79068
-      }
-    } ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "3474449ab46aae3a.json",
+  "source" : "d8ce14846de95691.json",
   "statusDetailsSafe" : {
     "message" : "Error: Invalid plan string: pro",
     "trace" : "Error: Invalid plan string: pro\n                    at JetpackPage._callee7$ (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wp-admin/jetpack.js:52:11)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)\n                    at JetpackPage.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n                    at JetpackPage.isPlan (/home/travis/build/Automattic/jetpack/tests/e2e/lib/pages/wp-admin/jetpack.js:267:24)",
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "empty" : false,
