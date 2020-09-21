@@ -1,12 +1,12 @@
 {
-  "uid" : "70b580b784e3c66",
-  "name" : "Plugin updater",
-  "fullName" : "Jetpack updater.Plugin updater",
-  "historyId" : "7b319be132c89caca0cc7527345c2ec1",
+  "uid" : "328b7fc41370c6eb",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1600196379744,
-    "stop" : 1600196456204,
-    "duration" : 76460
+    "start" : 1600196726021,
+    "stop" : 1600196753831,
+    "duration" : 27810
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -25,47 +25,11 @@
       "flaky" : false
     },
     "steps" : [ {
-      "name" : "Can login and navigate to Plugins page",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1600196379745,
-        "stop" : 1600196382803,
-        "duration" : 3058
-      },
-      "status" : "passed",
-      "statusDetails" : {
-        "flaky" : false
-      },
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can update Jetpack",
-      "time" : {
-        "start" : 1600196382804,
-        "stop" : 1600196390626,
-        "duration" : 7822
-      },
-      "status" : "passed",
-      "statusDetails" : {
-        "flaky" : false
-      },
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can connect Jetpack",
-      "time" : {
-        "start" : 1600196390626,
+        "start" : 1600196726023,
         "stop" : 0,
-        "duration" : -1600196390626
+        "duration" : -1600196726023
       },
       "status" : "unknown",
       "statusDetails" : {
@@ -73,9 +37,9 @@
       },
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "de549786d9b6caaa",
-        "name" : "Test failed: Jetpack updater :: Plugin updater",
-        "source" : "de549786d9b6caaa.png",
+        "uid" : "d31aeb4706ea6fde",
+        "name" : "Test failed: Connection :: In-place",
+        "source" : "d31aeb4706ea6fde.png",
         "type" : "image/png",
         "size" : 374117
       } ],
@@ -87,7 +51,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 1,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : true,
     "hasContent" : true
@@ -95,34 +59,27 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Jetpack updater"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Jetpack updater"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Plugin updater"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Jetpack updater"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
-    "categories" : [ {
-      "name" : "Product defects",
-      "matchedStatuses" : [ ],
-      "flaky" : false
-    } ],
     "tags" : [ ]
   },
-  "source" : "70b580b784e3c66.json",
+  "source" : "328b7fc41370c6eb.json",
   "statusDetailsSafe" : {
     "message" : "TimeoutError: waiting for selector \".plan-features__table button.is-premium-plan:not([disabled])\" failed: timeout 25000ms exceeded",
     "trace" : "TimeoutError: waiting for selector \".plan-features__table button.is-premium-plan:not([disabled])\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/travis/build/Automattic/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/travis/build/Automattic/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/travis/build/Automattic/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/travis/build/Automattic/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
