@@ -1,28 +1,28 @@
 {
-  "uid" : "b643070c6243694e",
-  "name" : "In-place",
-  "fullName" : "Connection.In-place",
-  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "uid" : "3e5630c06f8198c3",
+  "name" : "Plugin updater",
+  "fullName" : "Jetpack updater.Plugin updater",
+  "historyId" : "7b319be132c89caca0cc7527345c2ec1",
   "time" : {
-    "start" : 1599192422104,
-    "stop" : 1599192448411,
-    "duration" : 26307
+    "start" : 1599192187717,
+    "stop" : 1599192269271,
+    "duration" : 81554
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : true
+    "flaky" : false
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can start in-place connection",
+      "name" : "Can login and navigate to Plugins page",
       "time" : {
-        "start" : 1599192422106,
-        "stop" : 1599192447886,
-        "duration" : 25780
+        "start" : 1599192187718,
+        "stop" : 1599192190699,
+        "duration" : 2981
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,26 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can assert that site is connected",
+      "name" : "Can update Jetpack",
       "time" : {
-        "start" : 1599192447886,
-        "stop" : 1599192448308,
-        "duration" : 422
+        "start" : 1599192190699,
+        "stop" : 1599192198597,
+        "duration" : 7898
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Can connect Jetpack",
+      "time" : {
+        "start" : 1599192198597,
+        "stop" : 1599192269267,
+        "duration" : 70670
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,7 +65,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
+    "stepsCount" : 3,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -58,41 +73,29 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Connection"
+    "value" : "Jetpack updater"
   }, {
     "name" : "testClass",
-    "value" : "Connection"
+    "value" : "Jetpack updater"
   }, {
     "name" : "testMethod",
-    "value" : "In-place"
+    "value" : "Plugin updater"
   }, {
     "name" : "package",
-    "value" : "Connection"
+    "value" : "Jetpack updater"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
+  "hidden" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ {
-      "uid" : "faa02ebf695ed934",
-      "status" : "failed",
-      "statusDetails" : "TimeoutError: waiting for selector \".current-plan-thank-you\" failed: timeout 25000ms exceeded",
-      "time" : {
-        "start" : 1599102557381,
-        "stop" : 1599102600468,
-        "duration" : 43087
-      }
-    } ],
-    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b643070c6243694e.json",
+  "source" : "3e5630c06f8198c3.json",
   "statusDetailsSafe" : {
-    "flaky" : true
+    "flaky" : false
   },
   "statusMessage" : {
     "empty" : true,
