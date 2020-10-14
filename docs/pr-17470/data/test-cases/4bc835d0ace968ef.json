@@ -1,28 +1,28 @@
 {
-  "uid" : "b6b8a6271eca7d5c",
-  "name" : "MailChimp Block",
-  "fullName" : "Paid blocks.MailChimp Block",
-  "historyId" : "7a6e34e5bac22aad50ad1dae83c80ad1",
+  "uid" : "4bc835d0ace968ef",
+  "name" : "Plugin updater",
+  "fullName" : "Jetpack updater.Plugin updater",
+  "historyId" : "7b319be132c89caca0cc7527345c2ec1",
   "time" : {
-    "start" : 1602591818453,
-    "stop" : 1602591832334,
-    "duration" : 13881
+    "start" : 1602676751894,
+    "stop" : 1602676822036,
+    "duration" : 70142
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a MailChimp block",
+      "name" : "Can login and navigate to Plugins page",
       "time" : {
-        "start" : 1602591818454,
-        "stop" : 1602591822817,
-        "duration" : 4363
+        "start" : 1602676751895,
+        "stop" : 1602676755019,
+        "duration" : 3124
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,11 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can connect to a MailChimp",
+      "name" : "Can update Jetpack",
       "time" : {
-        "start" : 1602591822817,
-        "stop" : 1602591827929,
-        "duration" : 5112
+        "start" : 1602676755019,
+        "stop" : 1602676762521,
+        "duration" : 7502
       },
       "status" : "passed",
       "steps" : [ ],
@@ -48,11 +48,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can publish a post and assert that MailChimp block is rendered",
+      "name" : "Can connect Jetpack",
       "time" : {
-        "start" : 1602591827929,
-        "stop" : 1602591832225,
-        "duration" : 4296
+        "start" : 1602676762521,
+        "stop" : 1602676822031,
+        "duration" : 59510
       },
       "status" : "passed",
       "steps" : [ ],
@@ -73,29 +73,49 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Paid blocks"
+    "value" : "Jetpack updater"
   }, {
     "name" : "testClass",
-    "value" : "Paid blocks"
+    "value" : "Jetpack updater"
   }, {
     "name" : "testMethod",
-    "value" : "MailChimp Block"
+    "value" : "Plugin updater"
   }, {
     "name" : "package",
-    "value" : "Paid blocks"
+    "value" : "Jetpack updater"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : true,
+  "hidden" : false,
   "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "83f57e9d46419ccf",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".plans-v2__columns .jetpack-product-card__price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1602669969182,
+        "stop" : 1602670051603,
+        "duration" : 82421
+      }
+    }, {
+      "uid" : "adc1c0b19ecd7bfe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602591929158,
+        "stop" : 1602591994827,
+        "duration" : 65669
+      }
+    } ],
+    "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b6b8a6271eca7d5c.json",
+  "source" : "4bc835d0ace968ef.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "empty" : true,
