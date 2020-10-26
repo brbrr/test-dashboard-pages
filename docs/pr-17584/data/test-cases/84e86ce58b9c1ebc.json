@@ -1,28 +1,28 @@
 {
-  "uid" : "ef9deecb9e1d21bd",
-  "name" : "Pay with PayPal",
-  "fullName" : "Paid blocks.Pay with PayPal",
-  "historyId" : "e0ca1dae1232c8da376862907c199a8b",
+  "uid" : "84e86ce58b9c1ebc",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
   "time" : {
-    "start" : 1603387550004,
-    "stop" : 1603387559176,
-    "duration" : 9172
+    "start" : 1603745022609,
+    "stop" : 1603745053371,
+    "duration" : 30762
   },
   "description" : "",
   "descriptionHtml" : "",
   "status" : "passed",
   "statusDetails" : {
-    "flaky" : false
+    "flaky" : true
   },
   "beforeStages" : [ ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ {
-      "name" : "Can visit the block editor and add a Pay with PayPal block",
+      "name" : "Can start in-place connection",
       "time" : {
-        "start" : 1603387550006,
-        "stop" : 1603387553089,
-        "duration" : 3083
+        "start" : 1603745022611,
+        "stop" : 1603745052762,
+        "duration" : 30151
       },
       "status" : "passed",
       "steps" : [ ],
@@ -33,26 +33,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Can fill details of Pay with PayPal block",
+      "name" : "Can assert that site is connected",
       "time" : {
-        "start" : 1603387553090,
-        "stop" : 1603387556869,
-        "duration" : 3779
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Can publish a post and assert that Pay with PayPal block is rendered",
-      "time" : {
-        "start" : 1603387556869,
-        "stop" : 1603387559160,
-        "duration" : 2291
+        "start" : 1603745052762,
+        "stop" : 1603745053177,
+        "duration" : 415
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,7 +50,7 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
+    "stepsCount" : 2,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -73,16 +58,16 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testClass",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "testMethod",
-    "value" : "Pay with PayPal"
+    "value" : "In-place"
   }, {
     "name" : "package",
-    "value" : "Paid blocks"
+    "value" : "Connection"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -92,13 +77,22 @@
   "hidden" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ ],
+    "retries" : [ {
+      "uid" : "7e7be20e8ed0fe4f",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603387784901,
+        "stop" : 1603387819175,
+        "duration" : 34274
+      }
+    } ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ef9deecb9e1d21bd.json",
+  "source" : "84e86ce58b9c1ebc.json",
   "statusDetailsSafe" : {
-    "flaky" : false
+    "flaky" : true
   },
   "statusMessage" : {
     "empty" : true,
