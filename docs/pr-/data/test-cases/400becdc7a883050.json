@@ -1,0 +1,607 @@
+{
+  "uid" : "400becdc7a883050",
+  "name" : "In-place",
+  "fullName" : "Connection.In-place",
+  "historyId" : "ad5f1e14898f92a50fac41fda7599983",
+  "time" : {
+    "start" : 1603902512839,
+    "stop" : 1603902546098,
+    "duration" : 33259
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+  "statusTrace" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/runner/work/jetpack/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/runner/work/jetpack/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/runner/work/jetpack/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+    "statusTrace" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded\n                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/DOMWorld.js:549:28)\n                    at DOMWorld._waitForSelectorOrXPath (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/DOMWorld.js:478:22)\n                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/DOMWorld.js:432:17)\n                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/FrameManager.js:627:47)\n                    at Frame.<anonymous> (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/helper.js:112:23)\n                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                  -- ASYNC --\n                    at Frame.<anonymous> (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/helper.js:111:15)\n                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/Page.js:1122:29)\n                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:33:30)\n                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)\n                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)\n                    at Generator.prototype.<computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)\n                    at asyncGeneratorStep (/home/runner/work/jetpack/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n                    at _next (/home/runner/work/jetpack/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n                    at /home/runner/work/jetpack/jetpack/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n                    at new Promise (<anonymous>)",
+    "steps" : [ {
+      "name" : "Can start in-place connection",
+      "time" : {
+        "start" : 1603902512848,
+        "stop" : 0,
+        "duration" : -1603902512848
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24c0ffdda506b71b",
+        "name" : "Test failed: Connection :: In-place",
+        "source" : "24c0ffdda506b71b.png",
+        "type" : "image/png",
+        "size" : 52697
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Connection"
+  }, {
+    "name" : "testClass",
+    "value" : "Connection"
+  }, {
+    "name" : "testMethod",
+    "value" : "In-place"
+  }, {
+    "name" : "package",
+    "value" : "Connection"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c42df1b0441b3f37",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603901223836,
+        "stop" : 1603901266264,
+        "duration" : 42428
+      }
+    }, {
+      "uid" : "33264f8687864206",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603900622320,
+        "stop" : 1603900653948,
+        "duration" : 31628
+      }
+    }, {
+      "uid" : "95c59a3cbf6d176",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603894430019,
+        "stop" : 1603894454950,
+        "duration" : 24931
+      }
+    }, {
+      "uid" : "15ed3a70276bd60",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603893502584,
+        "stop" : 1603893536281,
+        "duration" : 33697
+      }
+    }, {
+      "uid" : "b9d1fb10d72cdf8d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603893101765,
+        "stop" : 1603893127918,
+        "duration" : 26153
+      }
+    }, {
+      "uid" : "9af959aeab75976a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603888003374,
+        "stop" : 1603888038630,
+        "duration" : 35256
+      }
+    }, {
+      "uid" : "7a8d3a0783ebea03",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603886530384,
+        "stop" : 1603886558423,
+        "duration" : 28039
+      }
+    }, {
+      "uid" : "151c53a55ea64eb",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603883879722,
+        "stop" : 1603883913619,
+        "duration" : 33897
+      }
+    }, {
+      "uid" : "748b07fe8527a084",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603882613005,
+        "stop" : 1603882640399,
+        "duration" : 27394
+      }
+    }, {
+      "uid" : "171f32f96384e917",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603881999946,
+        "stop" : 1603882033208,
+        "duration" : 33262
+      }
+    }, {
+      "uid" : "d3d5fd70bec6eab1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603862940446,
+        "stop" : 1603862964330,
+        "duration" : 23884
+      }
+    }, {
+      "uid" : "b5b585d0cb1f9300",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603859892362,
+        "stop" : 1603859917593,
+        "duration" : 25231
+      }
+    }, {
+      "uid" : "d67d360a6b158d9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603859022356,
+        "stop" : 1603859047907,
+        "duration" : 25551
+      }
+    }, {
+      "uid" : "6d0f898a6ea2c016",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603858063263,
+        "stop" : 1603858087320,
+        "duration" : 24057
+      }
+    }, {
+      "uid" : "9b2a00a2b857f916",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603856471237,
+        "stop" : 1603856495387,
+        "duration" : 24150
+      }
+    }, {
+      "uid" : "6360a5130488fa9d",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603853254833,
+        "stop" : 1603853297028,
+        "duration" : 42195
+      }
+    }, {
+      "uid" : "ce4427d0e2f1367b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603850544092,
+        "stop" : 1603850573211,
+        "duration" : 29119
+      }
+    }, {
+      "uid" : "d2780bdab52da8cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603848188319,
+        "stop" : 1603848213712,
+        "duration" : 25393
+      }
+    }, {
+      "uid" : "e64361061cc94f3a",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603840556620,
+        "stop" : 1603840599662,
+        "duration" : 43042
+      }
+    }, {
+      "uid" : "32b15fa2ec1f40db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603831646994,
+        "stop" : 1603831675805,
+        "duration" : 28811
+      }
+    }, {
+      "uid" : "174357fdbe5ea5c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603825835627,
+        "stop" : 1603825864257,
+        "duration" : 28630
+      }
+    }, {
+      "uid" : "624c93942659114e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603824877548,
+        "stop" : 1603824905116,
+        "duration" : 27568
+      }
+    }, {
+      "uid" : "390203fd22ab4d17",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603824200973,
+        "stop" : 1603824228725,
+        "duration" : 27752
+      }
+    }, {
+      "uid" : "9b9f20af4b6f30e4",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603823778910,
+        "stop" : 1603823822229,
+        "duration" : 43319
+      }
+    }, {
+      "uid" : "7338e65eab056561",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603813949191,
+        "stop" : 1603813982090,
+        "duration" : 32899
+      }
+    }, {
+      "uid" : "2b567fe6b3146330",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603812838048,
+        "stop" : 1603812871445,
+        "duration" : 33397
+      }
+    }, {
+      "uid" : "3d15c3c720096420",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603812737818,
+        "stop" : 1603812764567,
+        "duration" : 26749
+      }
+    }, {
+      "uid" : "a82924e476ee4e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603810999345,
+        "stop" : 1603811032665,
+        "duration" : 33320
+      }
+    }, {
+      "uid" : "aae12cd4bac71c51",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603809877735,
+        "stop" : 1603809919478,
+        "duration" : 41743
+      }
+    }, {
+      "uid" : "50da483fe4a44e44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603806805472,
+        "stop" : 1603806833817,
+        "duration" : 28345
+      }
+    }, {
+      "uid" : "7a44b8f5ba7d66",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603804558311,
+        "stop" : 1603804599499,
+        "duration" : 41188
+      }
+    }, {
+      "uid" : "a531f053d9f00535",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603803620117,
+        "stop" : 1603803645286,
+        "duration" : 25169
+      }
+    }, {
+      "uid" : "c95900292e50a1dd",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603801367695,
+        "stop" : 1603801401030,
+        "duration" : 33335
+      }
+    }, {
+      "uid" : "257ca1749f09ec6",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603799243309,
+        "stop" : 1603799276619,
+        "duration" : 33310
+      }
+    }, {
+      "uid" : "843270147c52b6ba",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603794249588,
+        "stop" : 1603794282416,
+        "duration" : 32828
+      }
+    }, {
+      "uid" : "44c0e16698923453",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603793745130,
+        "stop" : 1603793771939,
+        "duration" : 26809
+      }
+    }, {
+      "uid" : "4829fe3ad81bde02",
+      "status" : "failed",
+      "statusDetails" : "Error: Protocol error (Page.captureScreenshot): Cannot take screenshot with 0 width.",
+      "time" : {
+        "start" : 1603792963891,
+        "stop" : 1603792991898,
+        "duration" : 28007
+      }
+    }, {
+      "uid" : "a9c190669a714407",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603792592746,
+        "stop" : 1603792626905,
+        "duration" : 34159
+      }
+    }, {
+      "uid" : "ce9557934c09d05d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603792425345,
+        "stop" : 1603792449762,
+        "duration" : 24417
+      }
+    }, {
+      "uid" : "abab56de308a45eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603791134860,
+        "stop" : 1603791166199,
+        "duration" : 31339
+      }
+    }, {
+      "uid" : "2b0e64a36f10f5fe",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector `iframe.jp-jetpack-connect__iframe` failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603790140061,
+        "stop" : 1603790173315,
+        "duration" : 33254
+      }
+    }, {
+      "uid" : "87762b8094a95074",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603782435771,
+        "stop" : 1603782459523,
+        "duration" : 23752
+      }
+    }, {
+      "uid" : "f2eb26815b905795",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603770713040,
+        "stop" : 1603770754150,
+        "duration" : 41110
+      }
+    }, {
+      "uid" : "9be8895ea89e6302",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603766026098,
+        "stop" : 1603766066342,
+        "duration" : 40244
+      }
+    }, {
+      "uid" : "c3b3ea7796724abf",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603765308325,
+        "stop" : 1603765349259,
+        "duration" : 40934
+      }
+    }, {
+      "uid" : "b2021b09b806e97b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603764757930,
+        "stop" : 1603764787618,
+        "duration" : 29688
+      }
+    }, {
+      "uid" : "248deae6e71f0d47",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603759703087,
+        "stop" : 1603759735879,
+        "duration" : 32792
+      }
+    }, {
+      "uid" : "9d4b60d43a8fe3e4",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603758668006,
+        "stop" : 1603758700891,
+        "duration" : 32885
+      }
+    }, {
+      "uid" : "170ae4c1c440e5a5",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603754730331,
+        "stop" : 1603754770603,
+        "duration" : 40272
+      }
+    }, {
+      "uid" : "e858f7abb7574471",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \".jetpack-product-card-alt .jetpack-product-card-alt__raw-price\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603753573264,
+        "stop" : 1603753606132,
+        "duration" : 32868
+      }
+    }, {
+      "uid" : "d167f03f6e686a37",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603751751055,
+        "stop" : 1603751791772,
+        "duration" : 40717
+      }
+    }, {
+      "uid" : "f3c99788c4b28ef0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603749582200,
+        "stop" : 1603749610623,
+        "duration" : 28423
+      }
+    }, {
+      "uid" : "dd406f4a6e0b68e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603749089578,
+        "stop" : 1603749117936,
+        "duration" : 28358
+      }
+    }, {
+      "uid" : "488fa3d179666722",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603748418582,
+        "stop" : 1603748460491,
+        "duration" : 41909
+      }
+    }, {
+      "uid" : "743aa14e94a6eb7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603744368409,
+        "stop" : 1603744396579,
+        "duration" : 28170
+      }
+    }, {
+      "uid" : "74657cde2ae0f968",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"iframe.jp-jetpack-connect__iframe\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603728077250,
+        "stop" : 1603728117683,
+        "duration" : 40433
+      }
+    }, {
+      "uid" : "22e9ea75001bfa3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603463663466,
+        "stop" : 1603463686355,
+        "duration" : 22889
+      }
+    }, {
+      "uid" : "8839ec72f245a8ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603350097282,
+        "stop" : 1603350111943,
+        "duration" : 14661
+      }
+    }, {
+      "uid" : "260565cbb7fa59e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603212631769,
+        "stop" : 1603212645616,
+        "duration" : 13847
+      }
+    }, {
+      "uid" : "730ce57bcf33fb90",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603197283849,
+        "stop" : 1603197297590,
+        "duration" : 13741
+      }
+    }, {
+      "uid" : "edda54dc504de03c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1603164647533,
+        "stop" : 1603164663453,
+        "duration" : 15920
+      }
+    }, {
+      "uid" : "3bb625d20c702132",
+      "status" : "failed",
+      "statusDetails" : "TimeoutError: waiting for selector \"#adminmenumain\" failed: timeout 25000ms exceeded",
+      "time" : {
+        "start" : 1603103868670,
+        "stop" : 1603103911503,
+        "duration" : 42833
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "400becdc7a883050.json",
+  "parameterValues" : [ ]
+}
