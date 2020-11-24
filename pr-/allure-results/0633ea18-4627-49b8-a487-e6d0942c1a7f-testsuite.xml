@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1606235781229' stop='1606235822297'>
+    <name>Connection</name>
+    <title>Connection</title>
+    <test-cases>
+        <test-case start='1606235786117' status='failed' stop='1606235815470'>
+            <name>In-place</name>
+            <title>In-place</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1606235786119' status='undefined'>
+                    <name>Can start in-place connection</name>
+                    <title>Can start in-place connection</title>
+                    <attachments>
+                        <attachment title='Test failed: Connection :: In-place' source='378c0231-c495-47fc-8b71-72ab0d8821f0-attachment.png' type='image/png' size='26389'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: page.goto: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                navigating to "https://ordinary-bulldog-79.a8c-localtunnel.cyou/wp-login.php", waiting until "load"
+                ============================================================
+                Note: use DEBUG=pw:api environment variable and rerun to capture Playwright logs.</message>
+                <stack-trace>page.goto: Timeout 30000ms exceeded.
+                =========================== logs ===========================
+                navigating to "https://ordinary-bulldog-79.a8c-localtunnel.cyou/wp-login.php", waiting until "load"
+                ============================================================
+                Note: use DEBUG=pw:api environment variable and rerun to capture Playwright logs.: 
+                    at Connection.sendMessageToServer (/home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/connection.js:69:15)
+                    at Proxy.&lt;anonymous> (/home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/channelOwner.js:54:53)
+                    at /home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/frame.js:80:71
+                    at Frame._wrapApiCall (/home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/channelOwner.js:80:34)
+                    at Frame.goto (/home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/frame.js:78:21)
+                    at /home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/page.js:267:60
+                    at Page._attributeToPage (/home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/page.js:202:20)
+                    at Page.goto (/home/runner/work/jetpack/jetpack/node_modules/playwright/lib/client/page.js:267:21)
+                    at Function.goto (/home/runner/work/jetpack/jetpack/tests/e2e/lib/pages/page.js:44:14)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
