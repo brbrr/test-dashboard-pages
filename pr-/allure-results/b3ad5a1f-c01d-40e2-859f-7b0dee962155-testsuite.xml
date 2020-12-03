@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607016919984' stop='1607017029103'>
+    <name>Paid blocks</name>
+    <title>Paid blocks</title>
+    <test-cases>
+        <test-case start='1607016959997' status='passed' stop='1607016975956'>
+            <name>MailChimp Block</name>
+            <title>MailChimp Block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607016959998' status='passed' stop='1607016967298'>
+                    <name>Can visit the block editor and add a MailChimp block</name>
+                    <title>Can visit the block editor and add a MailChimp block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607016967299' status='passed' stop='1607016973320'>
+                    <name>Can connect to a MailChimp</name>
+                    <title>Can connect to a MailChimp</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607016973320' status='passed' stop='1607016975891'>
+                    <name>Can publish a post and assert that MailChimp block is rendered</name>
+                    <title>Can publish a post and assert that MailChimp block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1607016975956' status='failed' stop='1607017017641'>
+            <name>Pay with PayPal</name>
+            <title>Pay with PayPal</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607016975957' status='passed' stop='1607016978958'>
+                    <name>Can visit the block editor and add a Pay with PayPal block</name>
+                    <title>Can visit the block editor and add a Pay with PayPal block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607016978958' status='passed' stop='1607016982496'>
+                    <name>Can fill details of Pay with PayPal block</name>
+                    <title>Can fill details of Pay with PayPal block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607016982496' status='undefined'>
+                    <name>Can publish a post and assert that Pay with PayPal block is rendered</name>
+                    <title>Can publish a post and assert that Pay with PayPal block is rendered</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: Pay with PayPal' source='ed974211-d6bc-4927-8ebd-c4515b424180-attachment.png' type='image/png' size='44926'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector `.post-publish-panel__postpublish-buttons a` failed: timeout 30000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector `.post-publish-panel__postpublish-buttons a` failed: timeout 30000ms exceeded
+                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:505:34)
+                    at DOMWorld.waitForSelectorInPage (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:416:26)
+                    at Object.internalHandler.waitFor (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)
+                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:312:29)
+                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:842:51)
+                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1285:33)
+                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:32:30)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.&lt;computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1607017017641' status='passed' stop='1607017024414'>
+            <name>WordAds block</name>
+            <title>WordAds block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607017017641' status='passed' stop='1607017020459'>
+                    <name>Can visit the block editor and add a WordAds block</name>
+                    <title>Can visit the block editor and add a WordAds block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607017020459' status='passed' stop='1607017021245'>
+                    <name>Can switch to Wide Skyscraper ad format</name>
+                    <title>Can switch to Wide Skyscraper ad format</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607017021245' status='passed' stop='1607017024370'>
+                    <name>Can publish a post and assert that WordAds block is rendered</name>
+                    <title>Can publish a post and assert that WordAds block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
