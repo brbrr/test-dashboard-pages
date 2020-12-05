@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607132408440' stop='1607132632860'>
+    <name>Paid blocks</name>
+    <title>Paid blocks</title>
+    <test-cases>
+        <test-case start='1607132445851' status='failed' stop='1607132499384'>
+            <name>MailChimp Block</name>
+            <title>MailChimp Block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607132445853' status='passed' stop='1607132452999'>
+                    <name>Can visit the block editor and add a MailChimp block</name>
+                    <title>Can visit the block editor and add a MailChimp block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607132452999' status='undefined'>
+                    <name>Can connect to a MailChimp</name>
+                    <title>Can connect to a MailChimp</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: MailChimp Block' source='6e385667-01e7-4cdd-9bb5-e9c97f8a98f5-attachment.png' type='image/png' size='12060'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector `.connections__sharing-connections` failed: timeout 40000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector `.connections__sharing-connections` failed: timeout 40000ms exceeded
+                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:505:34)
+                    at DOMWorld.waitForSelectorInPage (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:416:26)
+                    at Object.internalHandler.waitFor (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)
+                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:312:29)
+                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:842:51)
+                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1285:33)
+                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:32:30)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.&lt;computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1607132499384' status='failed' stop='1607132621026'>
+            <name>Pay with PayPal</name>
+            <title>Pay with PayPal</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607132499385' status='undefined'>
+                    <name>Can visit the block editor and add a Pay with PayPal block</name>
+                    <title>Can visit the block editor and add a Pay with PayPal block</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: Pay with PayPal' source='e536e941-4894-48c4-90fe-ec413aa4c065-attachment.png' type='image/png' size='4214'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: Navigation timeout of 30000 ms exceeded</message>
+                <stack-trace>TimeoutError: Navigation timeout of 30000 ms exceeded
+                    at /home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1607132621027' status='passed' stop='1607132627702'>
+            <name>WordAds block</name>
+            <title>WordAds block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607132621027' status='passed' stop='1607132623991'>
+                    <name>Can visit the block editor and add a WordAds block</name>
+                    <title>Can visit the block editor and add a WordAds block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607132623991' status='passed' stop='1607132624784'>
+                    <name>Can switch to Wide Skyscraper ad format</name>
+                    <title>Can switch to Wide Skyscraper ad format</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607132624784' status='passed' stop='1607132627675'>
+                    <name>Can publish a post and assert that WordAds block is rendered</name>
+                    <title>Can publish a post and assert that WordAds block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
