@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1607435516776' stop='1607435665088'>
+    <name>Jetpack updater</name>
+    <title>Jetpack updater</title>
+    <test-cases>
+        <test-case start='1607435534936' status='failed' stop='1607435634470'>
+            <name>Plugin updater</name>
+            <title>Plugin updater</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1607435534937' status='passed' stop='1607435537930'>
+                    <name>Can login and navigate to Plugins page</name>
+                    <title>Can login and navigate to Plugins page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1607435537930' status='undefined'>
+                    <name>Can update Jetpack</name>
+                    <title>Can update Jetpack</title>
+                    <attachments>
+                        <attachment title='Test failed: Jetpack updater :: Plugin updater' source='8464d940-ca86-4879-a4a0-c62667ef07d9-attachment.png' type='image/png' size='280469'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector `tr.active#jetpack-update[data-plugin="jetpack/jetpack.php"] .updated-message` failed: timeout 90000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector `tr.active#jetpack-update[data-plugin="jetpack/jetpack.php"] .updated-message` failed: timeout 90000ms exceeded
+                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:505:34)
+                    at DOMWorld.waitForSelectorInPage (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:416:26)
+                    at Object.internalHandler.waitFor (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)
+                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:312:29)
+                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:842:51)
+                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1285:33)
+                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:32:30)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.&lt;computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
