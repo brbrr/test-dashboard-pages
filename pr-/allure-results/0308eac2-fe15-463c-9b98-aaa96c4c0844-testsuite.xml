@@ -1,0 +1,98 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1608022492927' stop='1608022593399'>
+    <name>Paid blocks</name>
+    <title>Paid blocks</title>
+    <test-cases>
+        <test-case start='1608022527756' status='failed' stop='1608022570682'>
+            <name>MailChimp Block</name>
+            <title>MailChimp Block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1608022527760' status='passed' stop='1608022534133'>
+                    <name>Can visit the block editor and add a MailChimp block</name>
+                    <title>Can visit the block editor and add a MailChimp block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608022534133' status='undefined'>
+                    <name>Can connect to a MailChimp</name>
+                    <title>Can connect to a MailChimp</title>
+                    <attachments>
+                        <attachment title='Test failed: Paid blocks :: MailChimp Block' source='35708aa0-5e71-49b8-a2ee-d5b972185a62-attachment.png' type='image/png' size='42642'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector `.foldable-card__summary button:not([disabled])` failed: timeout 30000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector `.foldable-card__summary button:not([disabled])` failed: timeout 30000ms exceeded
+                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:505:34)
+                    at DOMWorld.waitForSelectorInPage (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:416:26)
+                    at Object.internalHandler.waitFor (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)
+                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:312:29)
+                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:842:51)
+                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1285:33)
+                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:32:30)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.&lt;computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1608022570682' status='passed' stop='1608022580631'>
+            <name>Pay with PayPal</name>
+            <title>Pay with PayPal</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1608022570683' status='passed' stop='1608022573953'>
+                    <name>Can visit the block editor and add a Pay with PayPal block</name>
+                    <title>Can visit the block editor and add a Pay with PayPal block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608022573953' status='passed' stop='1608022577343'>
+                    <name>Can fill details of Pay with PayPal block</name>
+                    <title>Can fill details of Pay with PayPal block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608022577343' status='passed' stop='1608022580629'>
+                    <name>Can publish a post and assert that Pay with PayPal block is rendered</name>
+                    <title>Can publish a post and assert that Pay with PayPal block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1608022580631' status='passed' stop='1608022588552'>
+            <name>WordAds block</name>
+            <title>WordAds block</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1608022580632' status='passed' stop='1608022582894'>
+                    <name>Can visit the block editor and add a WordAds block</name>
+                    <title>Can visit the block editor and add a WordAds block</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608022582894' status='passed' stop='1608022583572'>
+                    <name>Can switch to Wide Skyscraper ad format</name>
+                    <title>Can switch to Wide Skyscraper ad format</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608022583572' status='passed' stop='1608022588500'>
+                    <name>Can publish a post and assert that WordAds block is rendered</name>
+                    <title>Can publish a post and assert that WordAds block is rendered</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
