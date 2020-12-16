@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1608083950141' stop='1608084078785'>
+    <name>Jetpack updater</name>
+    <title>Jetpack updater</title>
+    <test-cases>
+        <test-case start='1608083967845' status='failed' stop='1608084049198'>
+            <name>Plugin updater</name>
+            <title>Plugin updater</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1608083967847' status='passed' stop='1608083970256'>
+                    <name>Can login and navigate to Plugins page</name>
+                    <title>Can login and navigate to Plugins page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608083970256' status='passed' stop='1608083975550'>
+                    <name>Can update Jetpack</name>
+                    <title>Can update Jetpack</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1608083975551' status='undefined'>
+                    <name>Can connect Jetpack</name>
+                    <title>Can connect Jetpack</title>
+                    <attachments>
+                        <attachment title='Test failed: Jetpack updater :: Plugin updater' source='46fb0f9e-0d19-469a-a611-a53893d628b4-attachment.png' type='image/png' size='278776'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector `div[data-e2e-product-slug="jetpack_complete"]` failed: timeout 40000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector `div[data-e2e-product-slug="jetpack_complete"]` failed: timeout 40000ms exceeded
+                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:505:34)
+                    at DOMWorld.waitForSelectorInPage (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:416:26)
+                    at Object.internalHandler.waitFor (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)
+                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:312:29)
+                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:842:51)
+                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1285:33)
+                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:32:30)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.&lt;computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
