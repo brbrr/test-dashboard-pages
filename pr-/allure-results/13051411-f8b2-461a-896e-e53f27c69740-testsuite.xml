@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1610467413807' stop='1610467490996'>
+    <name>Connection</name>
+    <title>Connection</title>
+    <test-cases>
+        <test-case start='1610467420034' status='failed' stop='1610467484580'>
+            <name>In-place</name>
+            <title>In-place</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1610467420035' status='undefined'>
+                    <name>Can start in-place connection</name>
+                    <title>Can start in-place connection</title>
+                    <attachments>
+                        <attachment title='Test failed: Connection :: In-place' source='513295f7-d0dc-48c1-b6f6-4a1766c8db7d-attachment.png' type='image/png' size='577271'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TimeoutError: waiting for selector `#adminmenumain` failed: timeout 25000ms exceeded</message>
+                <stack-trace>TimeoutError: waiting for selector `#adminmenumain` failed: timeout 25000ms exceeded
+                    at new WaitTask (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:505:34)
+                    at DOMWorld.waitForSelectorInPage (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:416:26)
+                    at Object.internalHandler.waitFor (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)
+                    at DOMWorld.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:312:29)
+                    at Frame.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:842:51)
+                    at Page.waitForSelector (/home/runner/work/jetpack/jetpack/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1285:33)
+                    at waitForSelector (/home/runner/work/jetpack/jetpack/tests/e2e/lib/page-helper.js:32:30)
+                    at tryCatch (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:45:40)
+                    at Generator.invoke [as _invoke] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:274:22)
+                    at Generator.prototype.&lt;computed> [as next] (/home/runner/work/jetpack/jetpack/node_modules/regenerator-runtime/runtime.js:97:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
